@@ -1,0 +1,1511 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MNP携帯キャリア比較 完全ガイド 2026最新版</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@700&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background: #f5f5f0;
+    color: #1a1a1a;
+    padding: 40px 20px;
+  }
+
+  /* ===== 共通パーツ ===== */
+  .page { max-width: 760px; margin: 0 auto 80px; background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 24px rgba(0,0,0,0.08); }
+  .page-header { padding: 36px 40px 28px; position: relative; }
+  .page-content { padding: 0 40px 40px; }
+
+  .badge { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; padding: 4px 12px; border-radius: 999px; margin-bottom: 10px; }
+  .page-title { font-family: 'Noto Serif JP', serif; font-size: 28px; font-weight: 700; line-height: 1.4; margin-bottom: 8px; }
+  .page-subtitle { font-size: 14px; color: rgba(255,255,255,0.8); line-height: 1.7; }
+
+  .section { margin-bottom: 36px; }
+  .section-label { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; margin-bottom: 6px; }
+  .section h2 { font-size: 20px; font-weight: 700; margin-bottom: 14px; line-height: 1.4; }
+  .body-text { font-size: 14px; color: #444; line-height: 1.8; margin-bottom: 12px; }
+
+  .divider { border: none; border-top: 2px dashed #e0e0e0; margin: 36px 0; }
+
+  /* カード系 */
+  .card { border-radius: 12px; padding: 18px 20px; margin-bottom: 12px; }
+  .card-grid { display: grid; gap: 12px; margin-top: 14px; }
+  .card-grid-2 { grid-template-columns: 1fr 1fr; }
+  .card-grid-3 { grid-template-columns: 1fr 1fr 1fr; }
+
+  /* スペックボックス */
+  .spec-box { border-radius: 14px; padding: 24px; margin: 16px 0; }
+  .spec-title { font-size: 11px; font-weight: 700; letter-spacing: 0.12em; margin-bottom: 16px; opacity: 0.7; }
+  .spec-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .spec-item { background: rgba(255,255,255,0.15); border-radius: 10px; padding: 12px 14px; }
+  .spec-label { font-size: 10px; font-weight: 700; letter-spacing: 0.08em; margin-bottom: 4px; opacity: 0.75; }
+  .spec-val { font-size: 20px; font-weight: 700; line-height: 1.2; }
+  .spec-sub { font-size: 10px; opacity: 0.7; margin-top: 2px; }
+
+  /* フロー */
+  .flow-row { display: flex; align-items: center; gap: 10px; margin: 16px 0; flex-wrap: wrap; }
+  .flow-box { flex: 1; min-width: 100px; border-radius: 10px; padding: 12px 14px; text-align: center; }
+  .flow-box .fl-label { font-size: 10px; font-weight: 700; letter-spacing: 0.08em; margin-bottom: 4px; }
+  .flow-box .fl-val { font-size: 13px; font-weight: 700; }
+  .flow-arrow { font-size: 20px; color: #999; }
+
+  /* 番号付きステップ */
+  .step-list { display: flex; flex-direction: column; gap: 12px; margin-top: 14px; }
+  .step-item { display: flex; gap: 14px; align-items: flex-start; }
+  .step-num { width: 28px; height: 28px; min-width: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; margin-top: 2px; }
+  .step-content .step-title { font-size: 14px; font-weight: 700; margin-bottom: 4px; }
+  .step-content .step-desc { font-size: 13px; color: #555; line-height: 1.7; }
+
+  /* 計算表 */
+  .calc-table { width: 100%; border-radius: 12px; overflow: hidden; margin-top: 14px; }
+  .calc-row { display: flex; justify-content: space-between; padding: 10px 18px; font-size: 14px; }
+  .calc-row:nth-child(odd) { background: #f8f8f5; }
+  .calc-total { font-weight: 700; font-size: 16px; padding: 14px 18px; display: flex; justify-content: space-between; }
+
+  /* NG/OKバッジ */
+  .status-badge { display: inline-block; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 999px; margin-bottom: 6px; }
+
+  /* まとめボックス */
+  .summary-box { border-radius: 14px; padding: 24px 28px; margin-top: 28px; }
+
+  /* テーブル */
+  table { width: 100%; border-collapse: collapse; font-size: 13px; margin-top: 12px; }
+  th { padding: 10px 14px; text-align: left; font-weight: 700; font-size: 12px; }
+  td { padding: 9px 14px; border-top: 1px solid #eee; }
+
+  /* 注意ボックス */
+  .alert-box { border-left: 4px solid; border-radius: 0 10px 10px 0; padding: 14px 18px; margin: 14px 0; }
+
+  /* タグ */
+  .tag { display: inline-block; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 4px; margin-right: 4px; }
+  .emoji-large { font-size: 28px; display: block; margin-bottom: 8px; }
+
+  /* 共通ユーティリティ */
+  .text-red { color: #dc2626; }
+  .text-green { color: #16a34a; }
+  .text-blue { color: #2563eb; }
+  .bg-red-light { background: #fef2f2; border: 1px solid #fecaca; }
+  .bg-green-light { background: #f0fdf4; border: 1px solid #bbf7d0; }
+  .bg-yellow-light { background: #fefce8; border: 1px solid #fde047; }
+
+  /* ===== 表紙 カラーテーマ（ダークネイビー） ===== */
+  .theme-cover .page-header { background: linear-gradient(135deg, #0f172a 0%, #1e40af 60%, #3b82f6 100%); color: #fff; padding: 48px 40px 40px; }
+  .theme-cover .badge { background: rgba(255,255,255,0.15); color: #fff; border: 1px solid rgba(255,255,255,0.25); }
+  .theme-cover .page-title { font-size: 32px; color: #fff; }
+  .theme-cover .section-label { color: #3b82f6; }
+  .theme-cover .section h2 { color: #1e3a5f; }
+  .theme-cover .step-num { background: #1e40af; color: #fff; }
+  .theme-cover .card { background: #eff6ff; border: 1px solid #bfdbfe; }
+  .theme-cover .card.featured { background: #dbeafe; border: 2px solid #1e40af; }
+  .theme-cover .summary-box { background: #eff6ff; border: 2px solid #bfdbfe; }
+
+  /* ===== ドコモ カラーテーマ（レッド） ===== */
+  .theme-docomo .page-header { background: linear-gradient(135deg, #7f1d1d 0%, #dc2626 100%); color: #fff; }
+  .theme-docomo .badge { background: rgba(255,255,255,0.2); color: #fff; }
+  .theme-docomo .page-title { color: #fff; }
+  .theme-docomo .section-label { color: #dc2626; }
+  .theme-docomo .section h2 { color: #7f1d1d; }
+  .theme-docomo .step-num { background: #dc2626; color: #fff; }
+  .theme-docomo .card { background: #fff5f5; border: 1px solid #fecaca; }
+  .theme-docomo .card.featured { background: #fecaca; border: 2px solid #dc2626; }
+  .theme-docomo .spec-box { background: linear-gradient(135deg, #7f1d1d, #dc2626); color: #fff; }
+  .theme-docomo .summary-box { background: #fff5f5; border: 2px solid #fecaca; }
+  .theme-docomo .flow-box { background: #fff5f5; }
+  .theme-docomo .flow-box .fl-label { color: #dc2626; }
+  .theme-docomo .flow-box .fl-val { color: #7f1d1d; }
+
+  /* ===== au/UQ カラーテーマ（オレンジ） ===== */
+  .theme-au .page-header { background: linear-gradient(135deg, #7c2d12 0%, #ea580c 100%); color: #fff; }
+  .theme-au .badge { background: rgba(255,255,255,0.2); color: #fff; }
+  .theme-au .page-title { color: #fff; }
+  .theme-au .section-label { color: #ea580c; }
+  .theme-au .section h2 { color: #7c2d12; }
+  .theme-au .step-num { background: #ea580c; color: #fff; }
+  .theme-au .card { background: #fff7ed; border: 1px solid #fed7aa; }
+  .theme-au .card.featured { background: #ffedd5; border: 2px solid #ea580c; }
+  .theme-au .spec-box { background: linear-gradient(135deg, #7c2d12, #ea580c); color: #fff; }
+  .theme-au .summary-box { background: #fff7ed; border: 2px solid #fed7aa; }
+  .theme-au .flow-box { background: #fff7ed; }
+  .theme-au .flow-box .fl-label { color: #ea580c; }
+  .theme-au .flow-box .fl-val { color: #7c2d12; }
+
+  /* ===== Y!mobile カラーテーマ（マゼンタ） ===== */
+  .theme-ymobile .page-header { background: linear-gradient(135deg, #831843 0%, #db2777 100%); color: #fff; }
+  .theme-ymobile .badge { background: rgba(255,255,255,0.2); color: #fff; }
+  .theme-ymobile .page-title { color: #fff; }
+  .theme-ymobile .section-label { color: #db2777; }
+  .theme-ymobile .section h2 { color: #831843; }
+  .theme-ymobile .step-num { background: #db2777; color: #fff; }
+  .theme-ymobile .card { background: #fdf2f8; border: 1px solid #fbcfe8; }
+  .theme-ymobile .card.featured { background: #fce7f3; border: 2px solid #db2777; }
+  .theme-ymobile .spec-box { background: linear-gradient(135deg, #831843, #db2777); color: #fff; }
+  .theme-ymobile .summary-box { background: #fdf2f8; border: 2px solid #fbcfe8; }
+  .theme-ymobile .flow-box { background: #fdf2f8; }
+  .theme-ymobile .flow-box .fl-label { color: #db2777; }
+  .theme-ymobile .flow-box .fl-val { color: #831843; }
+
+  /* ===== SoftBank カラーテーマ（ブラック） ===== */
+  .theme-softbank .page-header { background: linear-gradient(135deg, #111827 0%, #374151 100%); color: #fff; }
+  .theme-softbank .badge { background: rgba(255,255,255,0.15); color: #fff; }
+  .theme-softbank .page-title { color: #fff; }
+  .theme-softbank .section-label { color: #6b7280; }
+  .theme-softbank .section h2 { color: #111827; }
+  .theme-softbank .step-num { background: #374151; color: #fff; }
+  .theme-softbank .card { background: #f9fafb; border: 1px solid #d1d5db; }
+  .theme-softbank .card.featured { background: #f3f4f6; border: 2px solid #374151; }
+  .theme-softbank .spec-box { background: linear-gradient(135deg, #111827, #374151); color: #fff; }
+  .theme-softbank .summary-box { background: #f9fafb; border: 2px solid #d1d5db; }
+  .theme-softbank .flow-box { background: #f9fafb; }
+  .theme-softbank .flow-box .fl-label { color: #6b7280; }
+  .theme-softbank .flow-box .fl-val { color: #111827; }
+
+  /* ===== BIGLOBE カラーテーマ（グリーン） ===== */
+  .theme-biglobe .page-header { background: linear-gradient(135deg, #14532d 0%, #16a34a 100%); color: #fff; }
+  .theme-biglobe .badge { background: rgba(255,255,255,0.2); color: #fff; }
+  .theme-biglobe .page-title { color: #fff; }
+  .theme-biglobe .section-label { color: #16a34a; }
+  .theme-biglobe .section h2 { color: #14532d; }
+  .theme-biglobe .step-num { background: #16a34a; color: #fff; }
+  .theme-biglobe .card { background: #f0fdf4; border: 1px solid #bbf7d0; }
+  .theme-biglobe .card.featured { background: #dcfce7; border: 2px solid #16a34a; }
+  .theme-biglobe .spec-box { background: linear-gradient(135deg, #14532d, #16a34a); color: #fff; }
+  .theme-biglobe .summary-box { background: #f0fdf4; border: 2px solid #bbf7d0; }
+  .theme-biglobe .flow-box { background: #f0fdf4; }
+  .theme-biglobe .flow-box .fl-label { color: #16a34a; }
+  .theme-biglobe .flow-box .fl-val { color: #14532d; }
+
+  /* ===== 光回線 カラーテーマ（インディゴ） ===== */
+  .theme-hikari .page-header { background: linear-gradient(135deg, #1e1b4b 0%, #4f46e5 100%); color: #fff; }
+  .theme-hikari .badge { background: rgba(255,255,255,0.2); color: #fff; }
+  .theme-hikari .page-title { color: #fff; }
+  .theme-hikari .section-label { color: #4f46e5; }
+  .theme-hikari .section h2 { color: #1e1b4b; }
+  .theme-hikari .step-num { background: #4f46e5; color: #fff; }
+  .theme-hikari .card { background: #eef2ff; border: 1px solid #c7d2fe; }
+  .theme-hikari .card.featured { background: #e0e7ff; border: 2px solid #4f46e5; }
+  .theme-hikari .spec-box { background: linear-gradient(135deg, #1e1b4b, #4f46e5); color: #fff; }
+  .theme-hikari .summary-box { background: #eef2ff; border: 2px solid #c7d2fe; }
+  .theme-hikari .flow-box { background: #eef2ff; }
+  .theme-hikari .flow-box .fl-label { color: #4f46e5; }
+  .theme-hikari .flow-box .fl-val { color: #1e1b4b; }
+
+  /* 弾リスト */
+  .bullet-tag { display: inline-block; padding: 4px 12px; border-radius: 999px; font-size: 12px; font-weight: 700; margin: 4px; }
+
+  /* 解約カレンダー */
+  .calendar { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; margin-top: 12px; }
+  .cal-day { border-radius: 6px; padding: 6px 4px; text-align: center; font-size: 11px; font-weight: 700; background: #f0fdf4; color: #14532d; }
+  .cal-day.danger { background: #fef2f2; color: #dc2626; }
+  .cal-day.deadline { background: #dcfce7; color: #14532d; border: 2px solid #16a34a; }
+  .cal-day.ng { background: #fee2e2; color: #991b1b; border: 2px solid #dc2626; }
+
+  /* 維持費計算 */
+  .cost-step { background: #f9fafb; border-radius: 12px; padding: 16px 18px; margin-bottom: 10px; border-left: 4px solid #d1d5db; }
+  .cost-step.step1 { border-color: #6b7280; }
+  .cost-step.step2 { border-color: #374151; }
+  .cost-step.step3 { border-color: #111827; }
+  .cost-step-title { font-size: 12px; font-weight: 700; color: #374151; margin-bottom: 8px; }
+
+  @media print {
+    .page { box-shadow: none; margin-bottom: 0; page-break-after: always; }
+  }
+  @media (max-width: 600px) {
+    .page-content { padding: 0 20px 32px; }
+    .page-header { padding: 28px 20px 20px; }
+    .card-grid-2 { grid-template-columns: 1fr; }
+    .card-grid-3 { grid-template-columns: 1fr; }
+    .spec-grid { grid-template-columns: 1fr 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ===================================== -->
+<!-- 表紙 -->
+<!-- ===================================== -->
+<div class="page theme-cover">
+  <div class="page-header">
+    <span class="badge">📡 BONUS No.2 — 2026最新版</span>
+    <h1 class="page-title">MNP携帯キャリア<br>比較ガイド 完全版</h1>
+    <p class="page-subtitle">🔍 お得に乗り換えるための最新情報を完全網羅。全6キャリアの攻略法を一気に解説します。</p>
+  </div>
+  <div class="page-content" style="padding-top:32px;">
+
+    <div class="section">
+      <div class="section-label" style="color:#3b82f6;">📋 このガイドの構成</div>
+      <h2 style="color:#1e3a5f;">全6本の資料でキャリアを完全制覇 🎯</h2>
+      <p class="body-text">各キャリアの基本ルール・使える弾・注意点・利益最大化の戦略まで、初心者にも分かるよう丁寧に解説しています。</p>
+
+      <div class="step-list">
+        <div class="step-item">
+          <div class="step-num" style="background:#dc2626;">1</div>
+          <div class="step-content">
+            <div class="step-title">📱 docomo（ドコモ）攻略ガイド</div>
+            <div class="step-desc">委任状・量販店vs癒着店・弾の種類まで。5回線保持ルールを完全理解。</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#ea580c;">2</div>
+          <div class="step-content">
+            <div class="step-title">🟠 au / UQモバイル 攻略ガイド</div>
+            <div class="step-desc">解約新規ルール・枠共有の仕組み・UQ vs auどちらが得かを徹底解説。</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#db2777;">3</div>
+          <div class="step-content">
+            <div class="step-title">💗 Y!mobile（ワイモバイル）攻略ガイド</div>
+            <div class="step-desc">SoftBankとの別枠カウント・連続契約OKの強みを活かした戦略。</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#374151;">4</div>
+          <div class="step-content">
+            <div class="step-title">⚫ SoftBank 攻略ガイド</div>
+            <div class="step-desc">維持費実質0円を実現するスマデビ×クーポン×PayPay還元の組み合わせ術。</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#16a34a;">5</div>
+          <div class="step-content">
+            <div class="step-title">🟢 BIGLOBE 攻略ガイド</div>
+            <div class="step-desc">タイプA・D別の弾ルールと、25日解約締切の超重要ポイント。</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#4f46e5;">6</div>
+          <div class="step-content">
+            <div class="step-title">💜 光回線 完全ガイド</div>
+            <div class="step-desc">ブラックなし・高CB・SB光/BIGLOBE光の注意点まで網羅。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="summary-box" style="background:#eff6ff;border:2px solid #bfdbfe;">
+      <div style="font-size:13px;font-weight:700;color:#1e40af;margin-bottom:8px;">💡 このガイドの使い方</div>
+      <p style="font-size:14px;color:#1e3a5f;line-height:1.8;">まず自分が狙っているキャリアの資料を読み込んでください。<br>各資料は<strong>「基本ルール → 使える弾 → 注意点 → 攻略法」</strong>の流れで構成されています。<strong>契約前に必ず案件元・手配師に最新情報を確認する</strong>のが鉄則です。</p>
+      <div style="margin-top:14px;padding-top:12px;border-top:1px dashed #bfdbfe;text-align:right;font-size:12px;color:#888;">✍️ やっぴー（@8p_thankyou）</div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ===================================== -->
+<!-- No.1 docomo -->
+<!-- ===================================== -->
+<div class="page theme-docomo">
+  <div class="page-header">
+    <span class="badge">📱 No.1 — ドコモ攻略</span>
+    <h1 class="page-title">docomo<br>MNP攻略ガイド</h1>
+    <p class="page-subtitle">📋 契約ルールが複雑なドコモを体系的に理解して、利益を最大化しましょう。</p>
+  </div>
+  <div class="page-content">
+
+    <div class="section">
+      <div class="section-label">🔴 第1章</div>
+      <h2>📊 ドコモの基本ルール</h2>
+      <p class="body-text">ドコモは<strong>保持数・1回の契約数・維持期間</strong>の3つのルールを押さえれば、安定して回線を増やせます。</p>
+
+      <div class="spec-box">
+        <div class="spec-title">📋 BASIC RULES ／ ドコモ契約スペック</div>
+        <div class="spec-grid">
+          <div class="spec-item">
+            <div class="spec-label">保持可能回線数</div>
+            <div class="spec-val">5<span style="font-size:14px;">回線</span></div>
+            <div class="spec-sub">1人あたりの上限</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">1度に契約できる回線数</div>
+            <div class="spec-val">2<span style="font-size:14px;">回線</span></div>
+            <div class="spec-sub">利用者を入れれば3回線まで可</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">最低維持期間</div>
+            <div class="spec-val">181<span style="font-size:14px;">日</span></div>
+            <div class="spec-sub">約6ヶ月間</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">次回契約可能時期</div>
+            <div class="spec-val" style="font-size:14px;">契約日から<br>181日後</div>
+            <div class="spec-sub">約半年後</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card bg-yellow-light">
+        ⚠️ 店舗によっては<strong>「もう少し維持してほしい」</strong>と言われることも。必ず事前に条件を確認してください。
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <div class="section-label">🔴 第2章</div>
+      <h2>🎯 ドコモMNPで使える弾</h2>
+      <p class="body-text">ドコモへの乗り換えに使える代表的な弾（仕込み回線）です。<strong>店舗によって取り扱いや条件が変わる</strong>ため、契約前に必ず確認してください。</p>
+
+      <div class="card-grid card-grid-2">
+        <div class="card">
+          <span class="emoji-large">📦</span>
+          <div style="font-size:14px;font-weight:700;margin-bottom:4px;">ポケSIM</div>
+          <div style="font-size:12px;color:#555;">格安MVNOのポケット型SIM</div>
+        </div>
+        <div class="card">
+          <span class="emoji-large">🔴</span>
+          <div style="font-size:14px;font-weight:700;margin-bottom:4px;">楽天モバイル</div>
+          <div style="font-size:12px;color:#555;">独自回線・使いやすい定番弾</div>
+        </div>
+        <div class="card">
+          <span class="emoji-large">🌐</span>
+          <div style="font-size:14px;font-weight:700;margin-bottom:4px;">povo</div>
+          <div style="font-size:12px;color:#555;">au系。月額0円維持が可能</div>
+        </div>
+        <div class="card">
+          <span class="emoji-large">🛒</span>
+          <div style="font-size:14px;font-weight:700;margin-bottom:4px;">イオンモバイル</div>
+          <div style="font-size:12px;color:#555;">低コストで維持しやすい弾</div>
+        </div>
+      </div>
+
+      <div class="card bg-red-light" style="margin-top:14px;">
+        🚨 <strong>ドコモ系の弾（例：OCNモバイルONEなど）は店舗によって断られるケースあり！</strong><br>
+        弾がどこのキャリア系統か分からない場合は「○○○○ どこのキャリア？」と検索すれば即判別できます。
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <div class="section-label">🔴 第3章</div>
+      <h2>✅ 契約前のチェックリスト</h2>
+      <p class="body-text">店舗予約・来店の前に、必ず手配師（担当者）に以下の3点を確認してください。</p>
+
+      <div class="step-list">
+        <div class="step-item">
+          <div class="step-num">1</div>
+          <div class="step-content">
+            <div class="step-title">📋 店舗条件の最新情報を確認する</div>
+            <div class="step-desc">CB額・最低維持期間・必要書類など。条件は毎回変わる可能性があるため「前回と同じだろう」は禁物！</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">2</div>
+          <div class="step-content">
+            <div class="step-title">🎯 使える弾が条件に合うかを確認する</div>
+            <div class="step-desc">NGな弾がないかを事前チェック。当日に「この弾は使えません」と言われると契約できなくなります。</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">3</div>
+          <div class="step-content">
+            <div class="step-title">📅 予約の日時・持ち物を確認する</div>
+            <div class="step-desc">当日トラブルを防ぐため。書類の不備は即アウトになるので来店前日に再確認を！</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <div class="section-label">🔴 第4章</div>
+      <h2>🏪 量販店 vs 癒着店の違い</h2>
+      <p class="body-text">ドコモ契約では、店舗の種類によって<strong>解約のルールが大きく変わります</strong>。ここは超重要です！</p>
+
+      <div class="card-grid card-grid-2">
+        <div class="card bg-green-light">
+          <span class="status-badge" style="background:#dcfce7;color:#15803d;">✅ 初月解約OK</span>
+          <div style="font-size:15px;font-weight:700;margin:8px 0 6px;">🏬 量販店</div>
+          <div style="font-size:13px;color:#444;line-height:1.7;">家電量販店での契約は<strong>初月解約しても問題なし</strong>。契約成立が実績になるため、店舗側にデメリットがありません。</div>
+        </div>
+        <div class="card bg-red-light">
+          <span class="status-badge" style="background:#fef2f2;color:#991b1b;">❌ 初月解約NG</span>
+          <div style="font-size:15px;font-weight:700;margin:8px 0 6px;">🤝 癒着店</div>
+          <div style="font-size:13px;color:#444;line-height:1.7;">提携店・ショップは<strong>ノルマ維持があるため初月解約は絶対NG</strong>。最低維持期間を必ず守ること！</div>
+        </div>
+      </div>
+
+      <div class="card bg-yellow-light" style="margin-top:14px;">
+        💡 <strong>なぜ量販店は初月解約OK？</strong><br>
+        ドコモには「短期解約」の明確な定義がありません。量販店は契約が成立した時点で店舗の実績達成になるため、初月解約でもお互いにデメリットがない仕組みです。癒着店で初月解約すると今後その店舗を使えなくなるリスクがあります。
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <div class="section-label">🔴 第5章</div>
+      <h2>👨‍👩‍👧 家族名義で契約を増やす（委任状活用）</h2>
+      <p class="body-text">通常ドコモは1人2回線までですが、<strong>家族名義の委任状を使えばさらに契約数を増やせます</strong>。</p>
+
+      <div class="step-list">
+        <div class="step-item">
+          <div class="step-num">1</div>
+          <div class="step-content">
+            <div class="step-title">自分1人だけで契約 → 最大2回線まで</div>
+            <div class="step-desc">自名義のみの場合の上限。利用者登録をすると3回線目も可能。</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">2</div>
+          <div class="step-content">
+            <div class="step-title">委任状＋家族の身分証（原本）を持参する</div>
+            <div class="step-desc">家族名義分もまとめて契約可能になります。</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">3</div>
+          <div class="step-content">
+            <div class="step-title">1回の来店で複数回線を一気に確保 ✨</div>
+            <div class="step-desc">家族の分を同時に契約することで、回線数を大幅に増やせます。</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="background:#fff5f5;border:1px solid #fecaca;margin-top:14px;">
+        📄 <strong>委任状の入手方法：</strong>ドコモ公式サイト（docomo.ne.jp/support/consent_form/）からPDFを印刷してください。<strong>家族の身分証（原本）も毎回必要</strong>なので、あらかじめ家族に協力をお願いしておきましょう。委任状は契約のたびに毎回必要です。
+      </div>
+    </div>
+
+    <div class="summary-box">
+      <div style="font-size:13px;font-weight:700;color:#dc2626;margin-bottom:10px;">📱 No.1 ドコモ まとめ</div>
+      <div style="display:flex;flex-direction:column;gap:8px;">
+        <div style="font-size:13px;color:#7f1d1d;">✅ 最大<strong>5回線まで保持OK</strong></div>
+        <div style="font-size:13px;color:#7f1d1d;">✅ 1回の契約で<strong>2回線（利用者入れて3回線）</strong>まで。次は181日後</div>
+        <div style="font-size:13px;color:#7f1d1d;">✅ 量販店は<strong>初月解約OK</strong>、癒着店は<strong>絶対NG</strong></div>
+        <div style="font-size:13px;color:#7f1d1d;">✅ 家族名義＋委任状で<strong>契約数をさらに増やせる</strong></div>
+        <div style="font-size:13px;color:#7f1d1d;">✅ 弾の種類・条件は<strong>店舗に事前確認が必須</strong></div>
+      </div>
+      <div style="margin-top:14px;padding-top:12px;border-top:1px dashed #fecaca;text-align:right;font-size:12px;color:#888;">✍️ やっぴー（@8p_thankyou）</div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ===================================== -->
+<!-- No.2 au/UQ -->
+<!-- ===================================== -->
+<div class="page theme-au">
+  <div class="page-header">
+    <span class="badge">🟠 No.2 — au/UQ攻略</span>
+    <h1 class="page-title">au / UQモバイル<br>MNP攻略ガイド</h1>
+    <p class="page-subtitle">⚡ 解約新規ルールと枠共有の仕組みを理解すれば、回転スピードの速いau・UQで利益を最大化できます。</p>
+  </div>
+  <div class="page-content">
+
+    <div class="section">
+      <div class="section-label">🟠 第1章</div>
+      <h2>📊 au/UQの基本ルール</h2>
+      <p class="body-text">au/UQは<strong>回転スピードが速く条件も良い</strong>反面、ルールを正確に把握しないとトラブルになりやすいキャリアです。</p>
+
+      <div class="spec-box">
+        <div class="spec-title">📋 BASIC RULES ／ au/UQ契約スペック</div>
+        <div class="spec-grid">
+          <div class="spec-item">
+            <div class="spec-label">保持可能回線数</div>
+            <div class="spec-val">5<span style="font-size:14px;">回線</span></div>
+            <div class="spec-sub">au+UQ合算</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">1度に契約できる回線数</div>
+            <div class="spec-val">3<span style="font-size:14px;">回線</span></div>
+            <div class="spec-sub">3回線目は利用者登録が必要</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">最低維持期間</div>
+            <div class="spec-val">181<span style="font-size:14px;">日</span></div>
+            <div class="spec-sub">約6ヶ月間</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">次回契約可能時期</div>
+            <div class="spec-val" style="font-size:13px;">支払い実績<br>2回経過後</div>
+            <div class="spec-sub">約3ヶ月</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card bg-yellow-light">
+        💡 UQの場合は<strong>回線数分の利用者が必要</strong>になるケースも多いです。契約前に店舗条件を必ず確認してください。
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <div class="section-label">🟠 第2章</div>
+      <h2>🎯 au/UQで使える弾</h2>
+
+      <div class="card-grid card-grid-2">
+        <div class="card">
+          <span class="emoji-large">🌀</span>
+          <div style="font-size:14px;font-weight:700;margin-bottom:4px;">aura</div>
+          <div style="font-size:12px;color:#555;">au専用の仕込み弾</div>
+        </div>
+        <div class="card">
+          <span class="emoji-large">🔴</span>
+          <div style="font-size:14px;font-weight:700;margin-bottom:4px;">楽天モバイル</div>
+          <div style="font-size:12px;color:#555;">独自回線で使いやすい定番</div>
+        </div>
+        <div class="card">
+          <span class="emoji-large">🛒</span>
+          <div style="font-size:14px;font-weight:700;margin-bottom:4px;">イオンモバイル（docomo回線）</div>
+          <div style="font-size:12px;color:#555;">docomo系なのでauにOK</div>
+        </div>
+        <div class="card">
+          <span class="emoji-large">➕</span>
+          <div style="font-size:14px;font-weight:700;margin-bottom:4px;">その他</div>
+          <div style="font-size:12px;color:#555;">案件元に要確認</div>
+        </div>
+      </div>
+
+      <div class="card bg-red-light" style="margin-top:14px;">
+        🚨 <strong>店舗によって条件が変動します。</strong>弾を作成する前に、必ず案件元や店舗に確認してください。
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <div class="section-label">🟠 第3章</div>
+      <h2>🔄 auとUQの枠共有ルール【重要】</h2>
+      <p class="body-text">au/UQ最大の特徴は<strong>「同じカウント枠」で管理されている</strong>という点です。これを理解すると戦略の幅が大きく広がります。</p>
+
+      <div class="card featured" style="margin-bottom:12px;">
+        <div style="text-align:center;padding:12px 0;">
+          <div style="font-size:24px;margin-bottom:8px;">au 3回線 ＋ UQ 2回線</div>
+          <div style="font-size:16px;font-weight:700;color:#7c2d12;">＝ 合計 <span style="font-size:28px;">5</span> 回線が上限</div>
+        </div>
+      </div>
+
+      <p class="body-text">同一名義でauを3回線契約した場合、<strong>2回の支払い実績が経過するまでUQの契約はできません</strong>。ただし、UQを追加で契約できるのは最大2回線まで。</p>
+
+      <div class="card bg-yellow-light">
+        💡 <strong>応用テク：</strong>枠共有の仕組みを使えば<strong>「UQ 3回線（MNP）＋ 新規2回線」</strong>で同時5回線契約も可能！戦略的に組み合わせましょう。
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <div class="section-label">🟠 第4章</div>
+      <h2>⚠️ 解約新規ルール【絶対に覚えること】</h2>
+      <p class="body-text">auには「解約新規」という特殊なルールがあります。これを知らずに進めると<strong>再契約できずにトラブル</strong>になります。</p>
+
+      <div class="card featured" style="text-align:center;margin-bottom:16px;">
+        <div style="font-size:13px;font-weight:700;color:#7c2d12;margin-bottom:6px;">★ 解約新規ルールとは</div>
+        <div style="font-size:15px;color:#444;line-height:1.7;"><strong>解約後すぐに同じ名義で再契約できない仕組み</strong><br>解約タイミングによって再契約できる時期が変わります</div>
+      </div>
+
+      <table>
+        <tr style="background:#ffedd5;">
+          <th>解約タイミング</th>
+          <th>再契約可能時期</th>
+        </tr>
+        <tr>
+          <td>解約した当月</td>
+          <td><strong class="text-red">❌ 再契約不可</strong></td>
+        </tr>
+        <tr>
+          <td>毎月15日より前に解約</td>
+          <td><strong class="text-green">✅ 翌月から再契約OK</strong></td>
+        </tr>
+        <tr>
+          <td>毎月15日以降に解約</td>
+          <td><strong style="color:#ea580c;">⚠️ 翌々月から再契約OK</strong></td>
+        </tr>
+      </table>
+
+      <div class="card-grid card-grid-2" style="margin-top:14px;">
+        <div class="card bg-green-light">
+          <div style="font-size:12px;font-weight:700;color:#15803d;margin-bottom:4px;">例）4月10日に解約</div>
+          <div style="font-size:15px;font-weight:700;margin-bottom:4px;">✅ 翌月OK</div>
+          <div style="font-size:12px;color:#555;">15日より前の解約なので<strong>5月1日から再契約が可能</strong>です。</div>
+        </div>
+        <div class="card bg-red-light">
+          <div style="font-size:12px;font-weight:700;color:#991b1b;margin-bottom:4px;">例）4月20日に解約</div>
+          <div style="font-size:15px;font-weight:700;margin-bottom:4px;">⚠️ 翌々月OK</div>
+          <div style="font-size:12px;color:#555;">15日以降の解約なので<strong>6月1日からしか再契約できません</strong>。</div>
+        </div>
+      </div>
+
+      <div class="card bg-yellow-light" style="margin-top:12px;">
+        ⚡ この「解約新規ルール」は<strong>ショップ契約時のみ適用</strong>されます。量販店では再契約できるケースもあるため、契約前に<strong>案件元へ必ず確認</strong>してください。
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <div class="section-label">🟠 第5章</div>
+      <h2>🏆 au vs UQ どちらがお得？</h2>
+
+      <div class="card-grid card-grid-2">
+        <div class="card">
+          <span class="status-badge" style="background:#fef3c7;color:#92400e;">△ サブ運用</span>
+          <div style="font-size:15px;font-weight:700;margin:8px 0 6px;">📱 au</div>
+          <div style="font-size:13px;color:#444;line-height:1.7;">ブランド力はあるが、<strong>CB火力はUQに劣る</strong>。維持費もやや高めです。</div>
+        </div>
+        <div class="card featured">
+          <span class="status-badge" style="background:#dcfce7;color:#15803d;">⭐ メイン推奨</span>
+          <div style="font-size:15px;font-weight:700;margin:8px 0 6px;">🟠 UQ</div>
+          <div style="font-size:13px;color:#444;line-height:1.7;"><strong>CB火力・維持費の両面で有利</strong>。基本的にUQを軸に動かすのが鉄板です。</div>
+        </div>
+      </div>
+
+      <div class="card bg-yellow-light" style="margin-top:12px;">
+        🎯 <strong>結論：基本はUQをメインに動かしていく！</strong><br>
+        UQはCB火力と維持費のバランスが優れているため有利に進められるケースが多いです。戦略の軸はUQに置き、auは補完的に使うのが効率的です。
+      </div>
+    </div>
+
+    <div class="summary-box">
+      <div style="font-size:13px;font-weight:700;color:#ea580c;margin-bottom:10px;">🟠 No.2 au/UQ まとめ</div>
+      <div style="display:flex;flex-direction:column;gap:8px;">
+        <div style="font-size:13px;color:#7c2d12;">✅ 保持上限は<strong>5回線（au+UQ合算）</strong></div>
+        <div style="font-size:13px;color:#7c2d12;">✅ 1回の契約で<strong>最大3回線まで</strong>（3回線目は利用者登録必須）</div>
+        <div style="font-size:13px;color:#7c2d12;">✅ UQは<strong>MNP3回線＋新規2回線で同時5回線</strong>も可能</div>
+        <div style="font-size:13px;color:#7c2d12;">✅ 2回目の契約は<strong>支払い実績2回経過後</strong>から</div>
+        <div style="font-size:13px;color:#7c2d12;">⚠️ <strong>解約新規ルールに注意</strong>（15日前後で再契約可能時期が変わる）</div>
+        <div style="font-size:13px;color:#7c2d12;">🏆 メインは<strong>UQ中心</strong>で動かすのが鉄板</div>
+      </div>
+      <div style="margin-top:14px;padding-top:12px;border-top:1px dashed #fed7aa;text-align:right;font-size:12px;color:#888;">✍️ やっぴー（@8p_thankyou）</div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ===================================== -->
+<!-- No.3 Y!mobile -->
+<!-- ===================================== -->
+<div class="page theme-ymobile">
+  <div class="page-header">
+    <span class="badge">💗 No.3 — ワイモバイル攻略</span>
+    <h1 class="page-title">Y!mobile<br>MNP攻略ガイド</h1>
+    <p class="page-subtitle">✨ SoftBankとの別枠カウントと連続契約の仕組みで、柔軟に回線枠を広げられるキャリアです。</p>
+  </div>
+  <div class="page-content">
+
+    <div class="section">
+      <div class="section-label">💗 第1章</div>
+      <h2>📊 Y!mobileの基本ルール</h2>
+      <p class="body-text">Y!mobileは<strong>連続契約OK・別枠カウント</strong>という特徴から、他キャリアと並行して進めやすいのが最大の強みです。</p>
+
+      <div class="spec-box">
+        <div class="spec-title">📋 BASIC RULES ／ Y!mobile契約スペック</div>
+        <div class="spec-grid">
+          <div class="spec-item">
+            <div class="spec-label">保持可能回線数</div>
+            <div class="spec-val">5<span style="font-size:14px;">回線</span></div>
+            <div class="spec-sub">1人あたりの上限</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">1度に契約できる回線数</div>
+            <div class="spec-val">5<span style="font-size:14px;">回線</span></div>
+            <div class="spec-sub">3〜5回線目は利用者登録必須</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">MNP連続契約</div>
+            <div class="spec-val" style="font-size:14px;">制限<br>なし</div>
+            <div class="spec-sub">待機期間なし 🎉</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">最低維持期間</div>
+            <div class="spec-val">181<span style="font-size:14px;">日</span></div>
+            <div class="spec-sub">約6ヶ月間</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card bg-yellow-light">
+        💡 最近は<strong>1回線ずつ利用者登録が必要</strong>になるケースが多いです。利用者の氏名・生年月日を店舗で登録し、写真読み取りが必要になります。
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <div class="section-label">💗 第2章</div>
+      <h2>🎯 Y!mobileで使える弾</h2>
+
+      <div class="card-grid card-grid-3">
+        <div class="card" style="text-align:center;">
+          <span class="emoji-large" style="text-align:center;">📦</span>
+          <div style="font-size:13px;font-weight:700;">ポケSIM</div>
+        </div>
+        <div class="card" style="text-align:center;">
+          <span class="emoji-large" style="text-align:center;">🔴</span>
+          <div style="font-size:13px;font-weight:700;">楽天モバイル</div>
+        </div>
+        <div class="card" style="text-align:center;">
+          <span class="emoji-large" style="text-align:center;">🌐</span>
+          <div style="font-size:13px;font-weight:700;">IIJmio</div>
+        </div>
+        <div class="card" style="text-align:center;">
+          <span class="emoji-large" style="text-align:center;">⚡</span>
+          <div style="font-size:13px;font-weight:700;">povo</div>
+        </div>
+        <div class="card" style="text-align:center;">
+          <span class="emoji-large" style="text-align:center;">🛒</span>
+          <div style="font-size:13px;font-weight:700;">イオンモバイル</div>
+        </div>
+        <div class="card" style="text-align:center;">
+          <span class="emoji-large" style="text-align:center;">📡</span>
+          <div style="font-size:13px;font-weight:700;">J:COM</div>
+        </div>
+      </div>
+
+      <div class="card bg-yellow-light" style="margin-top:12px;">
+        ⚠️ <strong>店舗によって取り扱い・条件が異なります。</strong>弾を作成する前に、必ず案件元へ確認してください。
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <div class="section-label">💗 第3章</div>
+      <h2>📡 SoftBankとの別枠カウント【最大の強み】</h2>
+      <p class="body-text">Y!mobile最大の魅力は<strong>SoftBankと完全に別枠で管理される</strong>仕組みです。これにより同一名義で最大10回線まで保有できます。</p>
+
+      <div class="card featured" style="text-align:center;padding:24px;">
+        <div style="display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;">
+          <div>
+            <div style="font-size:13px;font-weight:700;color:#831843;margin-bottom:4px;">SoftBank</div>
+            <div style="font-size:36px;font-weight:700;color:#831843;">5</div>
+            <div style="font-size:12px;color:#555;">回線まで</div>
+          </div>
+          <div style="font-size:28px;">➕</div>
+          <div>
+            <div style="font-size:13px;font-weight:700;color:#db2777;margin-bottom:4px;">Y!mobile</div>
+            <div style="font-size:36px;font-weight:700;color:#db2777;">5</div>
+            <div style="font-size:12px;color:#555;">回線まで</div>
+          </div>
+          <div style="font-size:28px;">＝</div>
+          <div>
+            <div style="font-size:13px;font-weight:700;color:#831843;margin-bottom:4px;">合計最大</div>
+            <div style="font-size:36px;font-weight:700;color:#831843;">10</div>
+            <div style="font-size:12px;color:#555;">回線保有可能！</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card bg-yellow-light" style="margin-top:14px;">
+        ⭐ <strong>重要ポイント：</strong>すでにSoftBankで5回線持っていても、Y!mobileで追加5回線を契約できます！効率的に回線枠を広げるための最強の組み合わせです。
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <div class="section-label">💗 第4章</div>
+      <h2>🔄 MNPの連続契約が可能！</h2>
+      <p class="body-text">Y!mobileはauやdocomoのような<strong>181日待機期間がない</strong>ため、MNPで連続契約ができます。</p>
+
+      <div class="card featured" style="padding:20px 24px;">
+        <div style="font-size:13px;font-weight:700;color:#831843;margin-bottom:12px;">▼ 連続契約の実例</div>
+        <div class="flow-row" style="justify-content:center;">
+          <div class="flow-box">
+            <div class="fl-label">📅 12月10日</div>
+            <div class="fl-val">3回線契約</div>
+          </div>
+          <span class="flow-arrow">↓</span>
+          <div class="flow-box" style="background:#fce7f3;border:2px solid #db2777;">
+            <div class="fl-label" style="color:#db2777;">✅ 待機期間なし！</div>
+            <div class="fl-val" style="color:#831843;">即追加OK</div>
+          </div>
+          <span class="flow-arrow">↓</span>
+          <div class="flow-box">
+            <div class="fl-label">📅 12月24日</div>
+            <div class="fl-val">2回線追加契約</div>
+          </div>
+        </div>
+      </div>
+
+      <p class="body-text" style="margin-top:14px;">連続契約を活用すれば、<strong>1〜2週間で5回線枠を一気に埋める</strong>ことも可能です。他キャリアと組み合わせれば、さらに効率的に稼げます！</p>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <div class="section-label">💗 第5章</div>
+      <h2>⚠️ 注意点と事前確認ポイント</h2>
+
+      <div class="step-list">
+        <div class="step-item">
+          <div class="step-num">1</div>
+          <div class="step-content">
+            <div class="step-title">⏰ 最低維持期間の指定が長いケースがある</div>
+            <div class="step-desc">店舗によっては181日以上の維持を指定してくる場合があります。事前確認必須。</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">2</div>
+          <div class="step-content">
+            <div class="step-title">🎯 使える弾の種類を指定してくるケースがある</div>
+            <div class="step-desc">MNP元の条件（使える弾の種類）を指定してくることもあります。</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">3</div>
+          <div class="step-content">
+            <div class="step-title">❌ まれに審査落ちするケースもある</div>
+            <div class="step-desc">弾の種類や契約履歴によっては審査に落ちることも。不安な方は事前に相談を。</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card bg-red-light" style="margin-top:12px;">
+        🚨 <strong>契約前には必ず「案件元」または「店舗スタッフ」に条件を確認！</strong>事前チェックを怠ると、当日契約不可になるリスクがあります。
+      </div>
+    </div>
+
+    <div class="summary-box">
+      <div style="font-size:13px;font-weight:700;color:#db2777;margin-bottom:10px;">💗 No.3 Y!mobile まとめ</div>
+      <div style="display:flex;flex-direction:column;gap:8px;">
+        <div style="font-size:13px;color:#831843;">✅ 最大<strong>5回線まで契約可能</strong>（SoftBankとは別枠）</div>
+        <div style="font-size:13px;color:#831843;">✅ MNPなら<strong>連続契約OK</strong>（待機期間なし！）</div>
+        <div style="font-size:13px;color:#831843;">✅ 新規契約後は<strong>91日間の待機期間</strong>あり</div>
+        <div style="font-size:13px;color:#831843;">✅ <strong>3回線目以降は利用者登録が必要</strong></div>
+        <div style="font-size:13px;color:#831843;">🏆 SoftBankと合わせて<strong>合計10回線まで保有可能</strong></div>
+      </div>
+      <div style="margin-top:14px;padding-top:12px;border-top:1px dashed #fbcfe8;text-align:right;font-size:12px;color:#888;">✍️ やっぴー（@8p_thankyou）</div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ===================================== -->
+<!-- No.4 SoftBank -->
+<!-- ===================================== -->
+<div class="page theme-softbank">
+  <div class="page-header">
+    <span class="badge">⚫ No.4 — ソフトバンク攻略</span>
+    <h1 class="page-title">SoftBank<br>MNP攻略ガイド</h1>
+    <p class="page-subtitle">💰 割引の組み合わせで維持費を実質0円以下にできる、利益率最強クラスのキャリアです。</p>
+  </div>
+  <div class="page-content">
+
+    <div class="section">
+      <div class="section-label">⚫ 第1章</div>
+      <h2>📊 SoftBankの基本ルール</h2>
+      <p class="body-text">SoftBankは<strong>Y!mobileと別枠・MNP連続契約OK</strong>で、回線枠を柔軟に広げられるキャリアです。</p>
+
+      <div class="spec-box">
+        <div class="spec-title">📋 BASIC RULES ／ SoftBank契約スペック</div>
+        <div class="spec-grid">
+          <div class="spec-item">
+            <div class="spec-label">保持可能回線数</div>
+            <div class="spec-val">5<span style="font-size:14px;">回線</span></div>
+            <div class="spec-sub">1人あたり</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">1度に契約できる回線数</div>
+            <div class="spec-val">5<span style="font-size:14px;">回線</span></div>
+            <div class="spec-sub">3〜5回線目は利用者登録必須</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">MNP連続契約</div>
+            <div class="spec-val" style="font-size:14px;">制限<br>なし</div>
+            <div class="spec-sub">待機期間なし 🎉</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">最低維持期間</div>
+            <div class="spec-val">181<span style="font-size:14px;">日</span></div>
+            <div class="spec-sub">量販店なら92日のケースも</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <div class="section-label">⚫ 第2章</div>
+      <h2>🎯 SoftBankで使える弾</h2>
+
+      <div class="card-grid card-grid-3">
+        <div class="card" style="text-align:center;">
+          <span class="emoji-large">📦</span>
+          <div style="font-size:13px;font-weight:700;">ポケSIM</div>
+        </div>
+        <div class="card" style="text-align:center;">
+          <span class="emoji-large">🔴</span>
+          <div style="font-size:13px;font-weight:700;">楽天モバイル</div>
+        </div>
+        <div class="card" style="text-align:center;">
+          <span class="emoji-large">🌐</span>
+          <div style="font-size:13px;font-weight:700;">IIJmio</div>
+        </div>
+        <div class="card" style="text-align:center;">
+          <span class="emoji-large">⚡</span>
+          <div style="font-size:13px;font-weight:700;">povo</div>
+        </div>
+        <div class="card" style="text-align:center;">
+          <span class="emoji-large">🛒</span>
+          <div style="font-size:13px;font-weight:700;">イオンモバイル</div>
+        </div>
+        <div class="card" style="text-align:center;">
+          <span class="emoji-large">📡</span>
+          <div style="font-size:13px;font-weight:700;">J:COM</div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <div class="section-label">⚫ 第3章</div>
+      <h2>📡 Y!mobileとの別枠カウント</h2>
+      <p class="body-text">SoftBankとY!mobileは<strong>完全に別枠カウント</strong>で管理されています。</p>
+
+      <div class="card featured" style="text-align:center;padding:24px;">
+        <div style="display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;">
+          <div>
+            <div style="font-size:13px;font-weight:700;color:#374151;margin-bottom:4px;">SoftBank</div>
+            <div style="font-size:36px;font-weight:700;color:#111827;">5</div>
+            <div style="font-size:12px;color:#555;">回線まで</div>
+          </div>
+          <div style="font-size:28px;">➕</div>
+          <div>
+            <div style="font-size:13px;font-weight:700;color:#db2777;margin-bottom:4px;">Y!mobile</div>
+            <div style="font-size:36px;font-weight:700;color:#db2777;">5</div>
+            <div style="font-size:12px;color:#555;">回線まで</div>
+          </div>
+          <div style="font-size:28px;">＝</div>
+          <div>
+            <div style="font-size:13px;font-weight:700;color:#111827;margin-bottom:4px;">合計最大</div>
+            <div style="font-size:36px;font-weight:700;color:#111827;">10</div>
+            <div style="font-size:12px;color:#555;">回線保有可能！</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <div class="section-label">⚫ 第4章</div>
+      <h2>📱 スマデビ × アプグレ 併用ルール</h2>
+      <p class="body-text">SoftBankには「スマホデビュープラン」と「アップグレード契約」の2つの特典があり、これらを組み合わせる戦略が重要です。</p>
+
+      <div class="card" style="margin-bottom:12px;">
+        <div style="font-weight:700;margin-bottom:8px;">🔑 3つのポイント</div>
+        <div style="font-size:13px;color:#444;line-height:1.8;">
+          ① 結論：<strong>スマデビとアプグレは併用可能</strong>（ただし割引の重複適用はNG）<br>
+          ② スマデビが適用されるかどうかは<strong>機種ではなく端末の種別</strong>で決まる<br>
+          ③ 例：<strong>ガラホにY!mobileのSIMを挿す → スマデビ適用OK</strong>
+        </div>
+      </div>
+
+      <div class="card bg-green-light" style="margin-bottom:10px;">
+        <div style="font-size:12px;font-weight:700;color:#15803d;margin-bottom:8px;">✅ スマデビ＋で使える追加割引</div>
+        <div style="font-size:13px;color:#444;line-height:1.8;">
+          📅 <strong>1年おトク割＋</strong>：加入から1年間 −1,188円/月<br>
+          🎓 <strong>20GBデビュー割</strong>：5〜22歳対象・6ヶ月間 −1,650円/月<br>
+          💬 <strong>Yahoo!／LINEクーポン割引</strong>：最大 −1,100円/月
+        </div>
+      </div>
+
+      <div class="card bg-red-light">
+        <div style="font-size:12px;font-weight:700;color:#991b1b;margin-bottom:8px;">❌ スマデビのNG条件（乗り換え元）</div>
+        <div style="font-size:13px;color:#444;line-height:1.8;">
+          LINEMO → Y!mobile ／ SoftBank → LINEMO ／ SoftBank → Y!mobileはすべて<strong>自社網からの転入のためNG</strong><br>
+          スマデビが適用されるのは<strong>docomo・au・楽天など他社キャリアからの転入のみ</strong>です。
+        </div>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <div class="section-label">⚫ 第5章</div>
+      <h2>💰 維持費"実質0円"の仕組み【SoftBank最大の強み】</h2>
+      <p class="body-text">定番プラン「メリハリ無制限」（月額7,425円）を、割引と特典を組み合わせて<strong>実質0円以下まで圧縮</strong>できます。</p>
+
+      <div class="cost-step step1">
+        <div class="cost-step-title">STEP 1️⃣ 基本割引4種を全適用</div>
+        <div style="font-size:13px;color:#374151;line-height:1.9;">
+          🔧 アプグレ割（機種変更 or ワイモバ→SB乗換）：<strong>−2,838円</strong><br>
+          👨‍👩‍👧 家族割（家族のSoftBank回線と契約）：<strong>−1,210円</strong><br>
+          🏠 おうち割光セット（SoftBank光 or Air契約）：<strong>−1,100円</strong><br>
+          💳 PayPayカード割（支払いをPayPayカードに）：<strong>−187円</strong>
+        </div>
+        <div style="margin-top:10px;padding-top:10px;border-top:1px dashed #d1d5db;font-size:14px;font-weight:700;">
+          7,425円 − 5,335円（合計割引）＝ <strong>月額 2,090円</strong>
+        </div>
+      </div>
+
+      <div class="cost-step step2">
+        <div class="cost-step-title">STEP 2️⃣ クーポン割引を併用</div>
+        <div style="font-size:13px;color:#374151;line-height:1.9;">
+          💬 <strong>LINEクーポン</strong>：SoftBank公式LINEから取得（毎月変動）最大 −1,100円<br>
+          🎰 <strong>Yahoo!クーポン</strong>：Yahoo!アカウント限定・月1回抽選 −1,000円
+        </div>
+        <div style="margin-top:10px;padding-top:10px;border-top:1px dashed #d1d5db;font-size:14px;font-weight:700;">
+          2,090円 − 1,100円 − 1,000円 ≒ <strong>実質 0円〜！</strong>
+        </div>
+      </div>
+
+      <div class="cost-step step3">
+        <div class="cost-step-title">STEP 3️⃣ PayPay特典で黒字化</div>
+        <div style="font-size:13px;color:#374151;line-height:1.8;">
+          💎 <strong>「ペイトク無制限特典」</strong>で毎月<strong>4,000円相当</strong>のPayPayポイント還元（時期により変動）
+        </div>
+        <div style="margin-top:10px;padding-top:10px;border-top:1px dashed #d1d5db;font-size:14px;font-weight:700;color:#16a34a;">
+          990円 − 4,000円 ＝ <strong>月 −3,010円（黒字！）</strong> 💰
+        </div>
+      </div>
+
+      <div class="card bg-green-light" style="margin-top:14px;text-align:center;padding:20px;">
+        <div style="font-size:13px;font-weight:700;color:#14532d;margin-bottom:4px;">🏆 結論</div>
+        <div style="font-size:20px;font-weight:700;color:#14532d;margin-bottom:6px;">維持するだけで月3,010円の黒字！</div>
+        <div style="font-size:13px;color:#555;">MNPのCB利益＋毎月の黒字分が積み上がるのがSoftBank最大の強みです。</div>
+      </div>
+    </div>
+
+    <div class="summary-box">
+      <div style="font-size:13px;font-weight:700;color:#374151;margin-bottom:10px;">⚫ No.4 SoftBank まとめ</div>
+      <div style="display:flex;flex-direction:column;gap:8px;">
+        <div style="font-size:13px;color:#111827;">✅ <strong>最大5回線まで契約可能</strong>（Y!mobileとは別枠）</div>
+        <div style="font-size:13px;color:#111827;">✅ <strong>MNP契約なら連続申込OK</strong>（待機不要）</div>
+        <div style="font-size:13px;color:#111827;">✅ <strong>スマデビ×アプグレ併用OK</strong>（割引の重複はNG）</div>
+        <div style="font-size:13px;color:#111827;">⚠️ <strong>SoftBank系からのMNPはスマデビ対象外</strong></div>
+        <div style="font-size:13px;color:#111827;">💰 各種割引＆クーポンで<strong>維持費0円以下も可能</strong></div>
+        <div style="font-size:13px;color:#16a34a;">🏆 ペイトク特典で<strong>月3,010円の黒字運用</strong>も狙える！</div>
+      </div>
+      <div style="margin-top:14px;padding-top:12px;border-top:1px dashed #d1d5db;text-align:right;font-size:12px;color:#888;">✍️ やっぴー（@8p_thankyou）</div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ===================================== -->
+<!-- No.5 BIGLOBE -->
+<!-- ===================================== -->
+<div class="page theme-biglobe">
+  <div class="page-header">
+    <span class="badge">🟢 No.5 — BIGLOBE攻略</span>
+    <h1 class="page-title">BIGLOBE<br>MNP攻略ガイド</h1>
+    <p class="page-subtitle">📅 タイプA・Dの違いと解約タイミングを理解すれば、1年単位で効率的に回せるキャリアです。</p>
+  </div>
+  <div class="page-content">
+
+    <div class="section">
+      <div class="section-label">🟢 第1章</div>
+      <h2>📊 BIGLOBEの基本ルール</h2>
+      <p class="body-text">BIGLOBEは<strong>1年サイクルで回す</strong>キャリアです。他キャリアよりも保持回線数が少ない分、<strong>1契約ごとのCB火力</strong>で勝負するスタイルです。</p>
+
+      <div class="spec-box">
+        <div class="spec-title">📋 BASIC RULES ／ BIGLOBE契約スペック</div>
+        <div class="spec-grid">
+          <div class="spec-item">
+            <div class="spec-label">保持可能回線数</div>
+            <div class="spec-val">2<span style="font-size:14px;">回線</span></div>
+            <div class="spec-sub">1人あたりの上限</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">1度に契約できる回線数</div>
+            <div class="spec-val">2<span style="font-size:14px;">回線</span></div>
+            <div class="spec-sub">上限まで同時契約可</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">最低維持期間</div>
+            <div class="spec-val">366<span style="font-size:14px;">日</span></div>
+            <div class="spec-sub">1年間</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">次回契約可能時期</div>
+            <div class="spec-val">366<span style="font-size:14px;">日後</span></div>
+            <div class="spec-sub">1年後に再スタート</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card bg-yellow-light">
+        💡 他キャリアよりも保持回線数・契約間隔が長いのがBIGLOBEの特徴。その分<strong>1契約あたりのCB火力</strong>で稼ぐキャリアです。
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <div class="section-label">🟢 第2章</div>
+      <h2>🎯 BIGLOBEで使える弾</h2>
+
+      <div class="card-grid card-grid-3">
+        <div class="card" style="text-align:center;">
+          <span class="emoji-large">🔴</span>
+          <div style="font-size:13px;font-weight:700;">楽天モバイル</div>
+        </div>
+        <div class="card" style="text-align:center;">
+          <span class="emoji-large">🌐</span>
+          <div style="font-size:13px;font-weight:700;">IIJmio</div>
+        </div>
+        <div class="card" style="text-align:center;">
+          <span class="emoji-large">⚡</span>
+          <div style="font-size:13px;font-weight:700;">povo</div>
+        </div>
+        <div class="card" style="text-align:center;">
+          <span class="emoji-large">🛒</span>
+          <div style="font-size:13px;font-weight:700;">イオンモバイル</div>
+        </div>
+        <div class="card" style="text-align:center;">
+          <span class="emoji-large">📡</span>
+          <div style="font-size:13px;font-weight:700;">J:COM</div>
+        </div>
+        <div class="card" style="text-align:center;">
+          <span class="emoji-large">➕</span>
+          <div style="font-size:13px;font-weight:700;">その他</div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <div class="section-label">🟢 第3章</div>
+      <h2>⚡ タイプA・タイプDの違い【超重要】</h2>
+      <p class="body-text">BIGLOBEには<strong>2種類の回線タイプ</strong>があり、使える弾が異なります。手持ちの弾が何系統かを必ず確認してください。</p>
+
+      <div class="card-grid card-grid-2">
+        <div class="card featured">
+          <div style="font-size:13px;font-weight:700;color:#14532d;margin-bottom:8px;">📶 タイプA</div>
+          <div style="font-size:16px;font-weight:700;margin-bottom:6px;">au回線ベース</div>
+          <div class="bg-red-light" style="border-radius:8px;padding:10px;margin-top:8px;">
+            <div style="font-size:11px;font-weight:700;color:#991b1b;">❌ NG弾</div>
+            <div style="font-size:13px;color:#444;margin-top:4px;"><strong>povo</strong>などau系の弾は使用不可</div>
+          </div>
+          <div style="margin-top:8px;font-size:12px;color:#16a34a;">✅ 楽天・IIJmio(d)などはOK</div>
+        </div>
+        <div class="card featured">
+          <div style="font-size:13px;font-weight:700;color:#14532d;margin-bottom:8px;">📶 タイプD</div>
+          <div style="font-size:16px;font-weight:700;margin-bottom:6px;">docomo回線ベース</div>
+          <div class="bg-red-light" style="border-radius:8px;padding:10px;margin-top:8px;">
+            <div style="font-size:11px;font-weight:700;color:#991b1b;">❌ NG弾</div>
+            <div style="font-size:13px;color:#444;margin-top:4px;"><strong>IIJmio</strong>などdocomo系の弾は使用不可</div>
+          </div>
+          <div style="margin-top:8px;font-size:12px;color:#16a34a;">✅ 楽天・povo・イオン(a)などはOK</div>
+        </div>
+      </div>
+
+      <div class="card bg-yellow-light" style="margin-top:14px;">
+        🔑 <strong>鉄則：同じ回線系統同士の乗り換えは不可！</strong><br>
+        弾がどの系統か分からない場合は「○○○○ どこのキャリア？」と検索すれば即判別できます。
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <div class="section-label">🟢 第4章</div>
+      <h2>♻️ おすすめの運用方法（1年サイクル戦略）</h2>
+      <p class="body-text">原則1年維持が必要ですが、実際には<strong>通信費がかさんで赤字になりやすい</strong>という現実があります。効率的な運用方法はこちら。</p>
+
+      <div class="step-list">
+        <div class="step-item">
+          <div class="step-num">1</div>
+          <div class="step-content">
+            <div class="step-title">📝 契約してから当月中に解約（短期解約）</div>
+            <div class="step-desc">通信費の積み上がりを最小限に抑えます。</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">2</div>
+          <div class="step-content">
+            <div class="step-title">⏳ ブラックリスト状態を1年間待つ</div>
+            <div class="step-desc">1年で解除されるため、この間は別キャリアで稼働します。</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">3</div>
+          <div class="step-content">
+            <div class="step-title">🔄 1年後に再契約してCBを再取得！</div>
+            <div class="step-desc">再度CB案件として活用できます。年1回のCBを安定して取りに行く戦略です。</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card bg-green-light" style="margin-top:14px;">
+        💡 <strong>運用の本質：</strong>「契約→即解約→1年後再契約」のサイクルで回すのが最も効率的。維持コストを極小化しながら年1回のCBを安定して取得します。
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <div class="section-label">🟢 第5章</div>
+      <h2>📅 解約タイミング【絶対に間違えるな！】</h2>
+      <p class="body-text">BIGLOBEは月末ではなく<strong>「25日」が解約締切</strong>です。ここを間違えると通信費が2ヶ月分請求されます。</p>
+
+      <div class="card-grid card-grid-2" style="margin-bottom:14px;">
+        <div class="card bg-green-light" style="text-align:center;">
+          <div style="font-size:28px;margin-bottom:6px;">✅</div>
+          <div style="font-size:15px;font-weight:700;color:#14532d;margin-bottom:4px;">25日までに解約</div>
+          <div style="font-size:13px;color:#444;font-weight:700;">→ 当月解約扱い</div>
+          <div style="font-size:12px;color:#555;margin-top:4px;">1ヶ月分のみ請求</div>
+        </div>
+        <div class="card bg-red-light" style="text-align:center;">
+          <div style="font-size:28px;margin-bottom:6px;">❌</div>
+          <div style="font-size:15px;font-weight:700;color:#991b1b;margin-bottom:4px;">26日以降に解約</div>
+          <div style="font-size:13px;color:#444;font-weight:700;">→ 翌月扱い</div>
+          <div style="font-size:12px;color:#555;margin-top:4px;">2ヶ月分請求される！</div>
+        </div>
+      </div>
+
+      <div class="card" style="background:#fff5f5;border:2px solid #dc2626;margin-top:14px;">
+        🚨 <strong>カレンダーに「毎月25日＝BIGLOBE解約日」として必ず登録してください！</strong><br>
+        <span style="font-size:13px;color:#555;margin-top:6px;display:block;">1日でも過ぎると翌月扱いで2ヶ月分請求されます。絶対に忘れないよう今すぐ登録を。</span>
+      </div>
+    </div>
+
+    <div class="summary-box">
+      <div style="font-size:13px;font-weight:700;color:#16a34a;margin-bottom:10px;">🟢 No.5 BIGLOBE まとめ</div>
+      <div style="display:flex;flex-direction:column;gap:8px;">
+        <div style="font-size:13px;color:#14532d;">✅ 保持上限は<strong>2回線／1人</strong></div>
+        <div style="font-size:13px;color:#14532d;">✅ 契約間隔は<strong>366日（1年）</strong></div>
+        <div style="font-size:13px;color:#14532d;">✅ 実質は<strong>当月解約→1年後再契約</strong>が最も効率的</div>
+        <div style="font-size:13px;color:#14532d;">✅ <strong>タイプA／Dで使える弾が異なる</strong>（同系統はNG）</div>
+        <div style="font-size:13px;color:#dc2626;">🚨 解約は<strong>必ず25日まで</strong>に！遅れると2ヶ月分請求される</div>
+      </div>
+      <div style="margin-top:14px;padding-top:12px;border-top:1px dashed #bbf7d0;text-align:right;font-size:12px;color:#888;">✍️ やっぴー（@8p_thankyou）</div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ===================================== -->
+<!-- No.6 光回線 -->
+<!-- ===================================== -->
+<div class="page theme-hikari">
+  <div class="page-header">
+    <span class="badge">💜 No.6 — 光回線ガイド</span>
+    <h1 class="page-title">光回線<br>完全ガイド</h1>
+    <p class="page-subtitle">✨ ブラックリストなし・高CBの超優良ジャンル。SoftBank光・BIGLOBE光・au光・docomo光の攻略法を完全解説します。</p>
+  </div>
+  <div class="page-content">
+
+    <div class="section">
+      <div class="section-label">💜 第1章</div>
+      <h2>📡 光回線を始めるタイミング</h2>
+      <p class="body-text">SoftBank・Y!mobileの実践を終えた後、<strong>次のステップ</strong>として取り組むのが光回線案件です。</p>
+
+      <div class="card-grid card-grid-2">
+        <div class="card">
+          <span class="emoji-large">⚫</span>
+          <div style="font-size:14px;font-weight:700;margin-bottom:4px;">SoftBank光</div>
+          <div style="font-size:12px;color:#555;">ソフトバンク系。紐づけで報酬アップ</div>
+        </div>
+        <div class="card">
+          <span class="emoji-large">🟢</span>
+          <div style="font-size:14px;font-weight:700;margin-bottom:4px;">BIGLOBE光</div>
+          <div style="font-size:12px;color:#555;">独立系。10G対応でコスパ優秀</div>
+        </div>
+        <div class="card">
+          <span class="emoji-large">🟠</span>
+          <div style="font-size:14px;font-weight:700;margin-bottom:4px;">au光</div>
+          <div style="font-size:12px;color:#555;">au系。セット割と組み合わせて活用</div>
+        </div>
+        <div class="card">
+          <span class="emoji-large">🔴</span>
+          <div style="font-size:14px;font-weight:700;margin-bottom:4px;">docomo光</div>
+          <div style="font-size:12px;color:#555;">ドコモ系。10G対応で高速通信も可能</div>
+        </div>
+      </div>
+
+      <div class="card bg-yellow-light" style="margin-top:14px;">
+        🏬 <strong>基本的に家電量販店（ヨドバシ・ビックカメラ・エディオンなど）で契約します。</strong>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <div class="section-label">💜 第2章</div>
+      <h2>📋 申し込みの基本ルール</h2>
+
+      <div class="card bg-red-light">
+        🚨 <strong>空（から）申し込みは絶対NG！</strong><br>
+        <span style="font-size:13px;color:#444;display:block;margin-top:6px;line-height:1.7;">空申し込みは店舗を騙す行為になります。必ず<strong>開通（工事）前提で契約</strong>してください。</span>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <div class="section-label">💜 第3章</div>
+      <h2>🔄 契約の流れ（5ステップ）</h2>
+
+      <div class="step-list">
+        <div class="step-item">
+          <div class="step-num">1</div>
+          <div class="step-content">
+            <div class="step-title">🏬 家電量販店に来店する</div>
+            <div class="step-desc">ヨドバシ・ビックカメラ・エディオンなどへ来店します。</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">2</div>
+          <div class="step-content">
+            <div class="step-title">📋 光回線の条件を確認する</div>
+            <div class="step-desc">事前予約時に聞けるケースもあります。CB額・条件を必ず確認。</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">3</div>
+          <div class="step-content">
+            <div class="step-title">💰 値引き額をチェックする</div>
+            <div class="step-desc">提示額は<strong>22,000円〜</strong>が相場です。交渉できる場合もあります。</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">4</div>
+          <div class="step-content">
+            <div class="step-title">🛒 換金できる家電商品を購入する</div>
+            <div class="step-desc">値引額に応じて、<strong>換金性の高い家電</strong>を選びます。</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">5</div>
+          <div class="step-content">
+            <div class="step-title">💴 家電を換金 or 自分で使用する</div>
+            <div class="step-desc">換金して利益化するか、欲しい家電の購入に充てます。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <div class="section-label">💜 第4章</div>
+      <h2>🔗 紐づけで報酬アップ！</h2>
+      <p class="body-text">SoftBank光はY!mobile・SoftBank回線と紐づけると<strong>報酬が大幅アップ</strong>します。</p>
+
+      <div class="card featured" style="text-align:center;padding:20px;">
+        <div style="font-size:13px;font-weight:700;color:#1e1b4b;margin-bottom:8px;">💡 紐づけボーナスの計算式</div>
+        <div style="font-size:22px;font-weight:700;color:#4f46e5;margin-bottom:6px;">回線数 × 5,000〜15,000円</div>
+        <div style="font-size:13px;color:#555;">PayPayポイント または 量販店ポイントで受け取り</div>
+      </div>
+
+      <div class="card bg-yellow-light" style="margin-top:14px;">
+        ⭐ <strong>重要ポイント：案件が出ているときは必ず紐づけを優先する！</strong><br>
+        複数回線持ちなら、さらに大きなボーナスが狙えます。SoftBankやY!mobile回線を持っているなら必ず紐づけて契約しましょう。
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <div class="section-label">💜 第5章</div>
+      <h2>⚡ 1Gと10G どっちがいい？</h2>
+
+      <div class="card-grid card-grid-2">
+        <div class="card">
+          <span class="status-badge" style="background:#e0e7ff;color:#3730a3;">標準</span>
+          <div style="font-size:15px;font-weight:700;margin:8px 0 6px;">📶 1G</div>
+          <div style="font-size:13px;color:#444;line-height:1.7;">乗り換えやすさ重視。<strong>転用・事業者変更</strong>しやすく、乗り換え先が多い。選択肢が豊富。</div>
+        </div>
+        <div class="card featured">
+          <span class="status-badge" style="background:#dcfce7;color:#15803d;">⭐ おすすめ</span>
+          <div style="font-size:15px;font-weight:700;margin:8px 0 6px;">🚀 10G</div>
+          <div style="font-size:13px;color:#444;line-height:1.7;">速度・コスパ重視。月<strong>550円〜</strong>と安く、実用的にも速くてお得。docomo光・BIGLOBE光が対応。</div>
+        </div>
+      </div>
+
+      <div class="card bg-yellow-light" style="margin-top:12px;">
+        💡 <strong>実用的には10Gのほうが速くてコスパが良い。</strong>SoftBank光10Gは新規限定ですが、半年間の月額割引などの特典が付くこともあります。
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <div class="section-label">💜 第6章</div>
+      <h2>🔓 光回線にブラックリストは存在しない！</h2>
+      <p class="body-text">携帯とは違い、光回線契約には<strong>信用情報のブラックリストが存在しません</strong>。これが光回線案件最大の強みです。</p>
+
+      <div class="card bg-green-light" style="margin-bottom:12px;">
+        <div style="font-weight:700;margin-bottom:8px;color:#14532d;">✅ ブラックにならない理由</div>
+        <div style="font-size:13px;color:#444;line-height:1.8;">
+          1️⃣ <strong>信用情報機関に登録されない</strong>（CIC等には記録されません）<br>
+          2️⃣ <strong>本人確認がゆるい</strong>（携帯契約と比べて簡易な場合が多い）<br>
+          3️⃣ <strong>短期間での乗り換えもOK</strong>（CB受け取り後の乗り換えが可能）
+        </div>
+      </div>
+
+      <div class="card bg-red-light">
+        <div style="font-weight:700;margin-bottom:8px;color:#991b1b;">⚠️ ただし例外あり！社内ブラックに注意</div>
+        <div style="font-size:13px;color:#444;line-height:1.8;">
+          以下2社は短期解約を繰り返すと<strong>社内ブラック扱いになる可能性</strong>があります：<br>
+          🟢 <strong>BIGLOBE光</strong>：半年以内の解約を繰り返すと審査落ちのリスク<br>
+          ⚫ <strong>SoftBank光</strong>：同様に継続運用を考えるなら最低半年の維持を推奨
+        </div>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <div class="section-label">💜 第7章</div>
+      <h2>🛡️ 安全に運用するための4つの注意点</h2>
+
+      <div class="step-list">
+        <div class="step-item">
+          <div class="step-num">1</div>
+          <div class="step-content">
+            <div class="step-title">⏰ 最低半年は維持する</div>
+            <div class="step-desc">SoftBank光・BIGLOBE光は半年以内の解約を繰り返すと審査で落ちる可能性があります。</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">2</div>
+          <div class="step-content">
+            <div class="step-title">💸 違約金に注意する</div>
+            <div class="step-desc">最低利用期間内に解約すると<strong>違約金が発生</strong>します。契約前に必ず金額を確認してください。</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">3</div>
+          <div class="step-content">
+            <div class="step-title">🏗️ 工事費の残債を確認する</div>
+            <div class="step-desc">工事費を分割にしている場合、解約時に<strong>一括請求</strong>されることもあります。</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">4</div>
+          <div class="step-content">
+            <div class="step-title">🎁 乗り換えキャンペーンを活用する</div>
+            <div class="step-desc">多くの光回線が<strong>「他社解約費負担キャンペーン」</strong>を実施中。うまく活用してリスクを軽減しましょう。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="summary-box">
+      <div style="font-size:13px;font-weight:700;color:#4f46e5;margin-bottom:10px;">💜 No.6 光回線 まとめ</div>
+      <div style="display:flex;flex-direction:column;gap:8px;">
+        <div style="font-size:13px;color:#1e1b4b;">✅ 光回線は<strong>ブラックリストがないため短期乗り換えOK</strong></div>
+        <div style="font-size:13px;color:#1e1b4b;">⚠️ <strong>BIGLOBE光・SoftBank光</strong>は社内審査に注意（半年以上の維持が安全）</div>
+        <div style="font-size:13px;color:#1e1b4b;">✅ <strong>違約金・工事費残債・特典条件</strong>を必ず事前確認</div>
+        <div style="font-size:13px;color:#1e1b4b;">✅ 紐づけや家電値引きをうまく活用すれば<strong>高利益案件</strong>に</div>
+        <div style="font-size:13px;color:#1e1b4b;">✅ プランは<strong>10Gが速くてコスパ◎</strong></div>
+        <div style="font-size:13px;color:#4f46e5;">🏆 光回線は「ブラックなし × 特典大」の<strong>超優良ジャンル</strong>！</div>
+      </div>
+      <div style="margin-top:14px;padding-top:12px;border-top:1px dashed #c7d2fe;text-align:right;font-size:12px;color:#888;">✍️ やっぴー（@8p_thankyou）</div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

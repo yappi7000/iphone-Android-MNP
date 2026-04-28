@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MNPおすすめ弾回線 完全ガイド 2026最新版</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@700&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background: #f5f5f0;
+    color: #1a1a1a;
+    padding: 40px 20px;
+  }
+
+  /* ===== 共通パーツ ===== */
+  .page { max-width: 760px; margin: 0 auto 80px; background: #fff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 24px rgba(0,0,0,0.08); }
+  .page-header { padding: 36px 40px 28px; position: relative; }
+  .page-content { padding: 0 40px 40px; }
+
+  .badge { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; padding: 4px 12px; border-radius: 999px; margin-bottom: 10px; }
+  .page-title { font-family: 'Noto Serif JP', serif; font-size: 28px; font-weight: 700; line-height: 1.4; margin-bottom: 8px; }
+  .page-subtitle { font-size: 14px; line-height: 1.7; }
+
+  .section { margin-bottom: 36px; }
+  .section-label { font-size: 11px; font-weight: 700; letter-spacing: 0.1em; margin-bottom: 6px; }
+  .section h2 { font-size: 20px; font-weight: 700; margin-bottom: 14px; line-height: 1.4; }
+  .body-text { font-size: 14px; color: #444; line-height: 1.8; margin-bottom: 12px; }
+
+  .divider { border: none; border-top: 2px dashed #e0e0e0; margin: 36px 0; }
+
+  /* カード系 */
+  .card { border-radius: 12px; padding: 18px 20px; margin-bottom: 12px; }
+  .card-grid { display: grid; gap: 12px; margin-top: 14px; }
+  .card-grid-2 { grid-template-columns: 1fr 1fr; }
+  .card-grid-3 { grid-template-columns: 1fr 1fr 1fr; }
+  .card-grid-4 { grid-template-columns: 1fr 1fr 1fr 1fr; }
+
+  /* フロー */
+  .flow-row { display: flex; align-items: center; gap: 10px; margin: 16px 0; flex-wrap: wrap; }
+  .flow-box { flex: 1; min-width: 100px; border-radius: 10px; padding: 12px 14px; text-align: center; }
+  .flow-box .fl-label { font-size: 10px; font-weight: 700; letter-spacing: 0.08em; margin-bottom: 4px; }
+  .flow-box .fl-val { font-size: 13px; font-weight: 700; }
+  .flow-arrow { font-size: 20px; color: #999; }
+
+  /* 番号付きステップ */
+  .step-list { display: flex; flex-direction: column; gap: 12px; margin-top: 14px; }
+  .step-item { display: flex; gap: 14px; align-items: flex-start; }
+  .step-num { width: 28px; height: 28px; min-width: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; margin-top: 2px; }
+  .step-content .step-title { font-size: 14px; font-weight: 700; margin-bottom: 4px; }
+  .step-content .step-desc { font-size: 13px; color: #555; line-height: 1.7; }
+
+  /* NG/OKバッジ */
+  .status-badge { display: inline-block; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 999px; margin-bottom: 6px; }
+
+  /* まとめボックス */
+  .summary-box { border-radius: 14px; padding: 24px 28px; margin-top: 28px; }
+
+  /* テーブル */
+  table { width: 100%; border-collapse: collapse; font-size: 13px; margin-top: 12px; }
+  th { padding: 10px 14px; text-align: left; font-weight: 700; font-size: 12px; }
+  td { padding: 9px 14px; border-top: 1px solid #eee; text-align: center; }
+  td:first-child { text-align: left; }
+
+  /* ランキングバッジ */
+  .rank-badge { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; font-size: 14px; font-weight: 700; margin-right: 8px; }
+
+  /* スペックグリッド */
+  .spec-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 14px 0; }
+  .spec-item { border-radius: 10px; padding: 12px 16px; text-align: center; }
+  .spec-label { font-size: 10px; font-weight: 700; letter-spacing: 0.08em; margin-bottom: 4px; opacity: 0.75; }
+  .spec-val { font-size: 22px; font-weight: 700; line-height: 1.2; }
+  .spec-sub { font-size: 10px; opacity: 0.7; margin-top: 2px; }
+
+  /* ページ区切り（印刷用） */
+  @media print {
+    .page { box-shadow: none; margin-bottom: 0; page-break-after: always; }
+  }
+
+  /* ===== カラーテーマ（ブルー） ===== */
+  .theme-blue .page-header { background: linear-gradient(135deg, #1e3a5f 0%, #2563a8 100%); color: #fff; }
+  .theme-blue .badge { background: rgba(255,255,255,0.2); color: #fff; }
+  .theme-blue .page-title { color: #fff; }
+  .theme-blue .page-subtitle { color: rgba(255,255,255,0.75); }
+  .theme-blue .section-label { color: #2563a8; }
+  .theme-blue .section h2 { color: #1e3a5f; }
+  .theme-blue .flow-box { background: #eff6ff; }
+  .theme-blue .flow-box .fl-label { color: #2563a8; }
+  .theme-blue .flow-box .fl-val { color: #1e3a5f; }
+  .theme-blue .step-num { background: #2563a8; color: #fff; }
+  .theme-blue .card { background: #f0f7ff; border: 1px solid #bfdbfe; }
+  .theme-blue .card.featured { background: #dbeafe; border: 2px solid #2563a8; }
+  .theme-blue .summary-box { background: #eff6ff; border: 2px solid #bfdbfe; }
+  .theme-blue .spec-item { background: rgba(255,255,255,0.18); }
+  .theme-blue th { background: #1e3a5f; color: #fff; }
+  .theme-blue tr:nth-child(even) td { background: #f0f7ff; }
+
+  /* ===== カラーテーマ（グリーン） ===== */
+  .theme-green .page-header { background: linear-gradient(135deg, #14532d 0%, #16a34a 100%); color: #fff; }
+  .theme-green .badge { background: rgba(255,255,255,0.2); color: #fff; }
+  .theme-green .page-title { color: #fff; }
+  .theme-green .page-subtitle { color: rgba(255,255,255,0.75); }
+  .theme-green .section-label { color: #16a34a; }
+  .theme-green .section h2 { color: #14532d; }
+  .theme-green .flow-box { background: #f0fdf4; }
+  .theme-green .flow-box .fl-label { color: #16a34a; }
+  .theme-green .flow-box .fl-val { color: #14532d; }
+  .theme-green .step-num { background: #16a34a; color: #fff; }
+  .theme-green .card { background: #f0fdf4; border: 1px solid #bbf7d0; }
+  .theme-green .card.featured { background: #dcfce7; border: 2px solid #16a34a; }
+  .theme-green .summary-box { background: #f0fdf4; border: 2px solid #bbf7d0; }
+  .theme-green .spec-item { background: rgba(255,255,255,0.18); }
+  .theme-green th { background: #14532d; color: #fff; }
+  .theme-green tr:nth-child(even) td { background: #f0fdf4; }
+
+  /* ===== カラーテーマ（オレンジ） ===== */
+  .theme-orange .page-header { background: linear-gradient(135deg, #7c2d12 0%, #ea580c 100%); color: #fff; }
+  .theme-orange .badge { background: rgba(255,255,255,0.2); color: #fff; }
+  .theme-orange .page-title { color: #fff; }
+  .theme-orange .page-subtitle { color: rgba(255,255,255,0.75); }
+  .theme-orange .section-label { color: #ea580c; }
+  .theme-orange .section h2 { color: #7c2d12; }
+  .theme-orange .flow-box { background: #fff7ed; }
+  .theme-orange .flow-box .fl-label { color: #ea580c; }
+  .theme-orange .flow-box .fl-val { color: #7c2d12; }
+  .theme-orange .step-num { background: #ea580c; color: #fff; }
+  .theme-orange .card { background: #fff7ed; border: 1px solid #fed7aa; }
+  .theme-orange .card.featured { background: #ffedd5; border: 2px solid #ea580c; }
+  .theme-orange .summary-box { background: #fff7ed; border: 2px solid #fed7aa; }
+  .theme-orange .spec-item { background: rgba(255,255,255,0.18); }
+  .theme-orange th { background: #7c2d12; color: #fff; }
+  .theme-orange tr:nth-child(even) td { background: #fff7ed; }
+
+  /* ===== カラーテーマ（パープル） ===== */
+  .theme-purple .page-header { background: linear-gradient(135deg, #3b0764 0%, #7c3aed 100%); color: #fff; }
+  .theme-purple .badge { background: rgba(255,255,255,0.2); color: #fff; }
+  .theme-purple .page-title { color: #fff; }
+  .theme-purple .page-subtitle { color: rgba(255,255,255,0.75); }
+  .theme-purple .section-label { color: #7c3aed; }
+  .theme-purple .section h2 { color: #3b0764; }
+  .theme-purple .flow-box { background: #faf5ff; }
+  .theme-purple .flow-box .fl-label { color: #7c3aed; }
+  .theme-purple .flow-box .fl-val { color: #3b0764; }
+  .theme-purple .step-num { background: #7c3aed; color: #fff; }
+  .theme-purple .card { background: #faf5ff; border: 1px solid #ddd6fe; }
+  .theme-purple .card.featured { background: #ede9fe; border: 2px solid #7c3aed; }
+  .theme-purple .summary-box { background: #faf5ff; border: 2px solid #ddd6fe; }
+  .theme-purple .spec-item { background: rgba(255,255,255,0.18); }
+  .theme-purple th { background: #3b0764; color: #fff; }
+  .theme-purple tr:nth-child(even) td { background: #faf5ff; }
+
+  /* ===== カラーテーマ（ティール） ===== */
+  .theme-teal .page-header { background: linear-gradient(135deg, #134e4a 0%, #0d9488 100%); color: #fff; }
+  .theme-teal .badge { background: rgba(255,255,255,0.2); color: #fff; }
+  .theme-teal .page-title { color: #fff; }
+  .theme-teal .page-subtitle { color: rgba(255,255,255,0.75); }
+  .theme-teal .section-label { color: #0d9488; }
+  .theme-teal .section h2 { color: #134e4a; }
+  .theme-teal .flow-box { background: #f0fdfa; }
+  .theme-teal .flow-box .fl-label { color: #0d9488; }
+  .theme-teal .flow-box .fl-val { color: #134e4a; }
+  .theme-teal .step-num { background: #0d9488; color: #fff; }
+  .theme-teal .card { background: #f0fdfa; border: 1px solid #99f6e4; }
+  .theme-teal .card.featured { background: #ccfbf1; border: 2px solid #0d9488; }
+  .theme-teal .summary-box { background: #f0fdfa; border: 2px solid #99f6e4; }
+  .theme-teal .spec-item { background: rgba(255,255,255,0.18); }
+  .theme-teal th { background: #134e4a; color: #fff; }
+  .theme-teal tr:nth-child(even) td { background: #f0fdfa; }
+
+  /* ===== カラーテーマ（インディゴ） ===== */
+  .theme-indigo .page-header { background: linear-gradient(135deg, #1e1b4b 0%, #4f46e5 100%); color: #fff; }
+  .theme-indigo .badge { background: rgba(255,255,255,0.2); color: #fff; }
+  .theme-indigo .page-title { color: #fff; }
+  .theme-indigo .page-subtitle { color: rgba(255,255,255,0.75); }
+  .theme-indigo .section-label { color: #4f46e5; }
+  .theme-indigo .section h2 { color: #1e1b4b; }
+  .theme-indigo .flow-box { background: #eef2ff; }
+  .theme-indigo .flow-box .fl-label { color: #4f46e5; }
+  .theme-indigo .flow-box .fl-val { color: #1e1b4b; }
+  .theme-indigo .step-num { background: #4f46e5; color: #fff; }
+  .theme-indigo .card { background: #eef2ff; border: 1px solid #c7d2fe; }
+  .theme-indigo .card.featured { background: #e0e7ff; border: 2px solid #4f46e5; }
+  .theme-indigo .summary-box { background: #eef2ff; border: 2px solid #c7d2fe; }
+  .theme-indigo .spec-item { background: rgba(255,255,255,0.18); }
+  .theme-indigo th { background: #1e1b4b; color: #fff; }
+  .theme-indigo tr:nth-child(even) td { background: #eef2ff; }
+
+  /* ===== カラーテーマ（ゴールド） ===== */
+  .theme-gold .page-header { background: linear-gradient(135deg, #451a03 0%, #b45309 100%); color: #fff; }
+  .theme-gold .badge { background: rgba(255,255,255,0.2); color: #fff; }
+  .theme-gold .page-title { color: #fff; }
+  .theme-gold .page-subtitle { color: rgba(255,255,255,0.75); }
+  .theme-gold .section-label { color: #b45309; }
+  .theme-gold .section h2 { color: #451a03; }
+  .theme-gold .flow-box { background: #fffbeb; }
+  .theme-gold .flow-box .fl-label { color: #b45309; }
+  .theme-gold .flow-box .fl-val { color: #451a03; }
+  .theme-gold .step-num { background: #b45309; color: #fff; }
+  .theme-gold .card { background: #fffbeb; border: 1px solid #fde68a; }
+  .theme-gold .card.featured { background: #fef3c7; border: 2px solid #b45309; }
+  .theme-gold .summary-box { background: #fffbeb; border: 2px solid #fde68a; }
+  .theme-gold .spec-item { background: rgba(255,255,255,0.18); }
+  .theme-gold th { background: #451a03; color: #fff; }
+  .theme-gold tr:nth-child(even) td { background: #fffbeb; }
+
+  /* 共通ユーティリティ */
+  .text-red { color: #dc2626; }
+  .text-green { color: #16a34a; }
+  .text-blue { color: #2563eb; }
+  .bg-red-light { background: #fef2f2; border: 1px solid #fecaca; }
+  .bg-green-light { background: #f0fdf4; border: 1px solid #bbf7d0; }
+  .bg-yellow-light { background: #fefce8; border: 1px solid #fde047; }
+  .emoji-large { font-size: 28px; display: block; margin-bottom: 8px; }
+  .tag { display: inline-block; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 4px; margin-right: 4px; }
+
+  @media (max-width: 600px) {
+    .page-content { padding: 0 20px 32px; }
+    .page-header { padding: 28px 20px 20px; }
+    .card-grid-2, .card-grid-3, .card-grid-4 { grid-template-columns: 1fr; }
+    .spec-grid { grid-template-columns: 1fr 1fr; }
+  }
+</style>
+</head>
+<body>
+
+
+<!-- ===================================== -->
+<!-- 概要ページ -->
+<!-- ===================================== -->
+<div class="page theme-blue">
+  <div class="page-header">
+    <span class="badge">🎯 BONUS — 2026最新版</span>
+    <h1 class="page-title">MNPおすすめ弾回線<br>完全ガイド</h1>
+    <p class="page-subtitle">💡 初心者向け 使いやすい4社を厳選。作成解説とおすすめポイントを完全解説します。</p>
+  </div>
+  <div class="page-content">
+
+    <div class="section">
+      <div class="section-label">🔵 概要</div>
+      <h2>📱 初心者向け おすすめの4社</h2>
+      <p class="body-text">MNPの弾回線として扱いやすいのはこの4社です。理由は<strong>開通の速さ・予約番号の発行スピード・契約のしやすさ</strong>が圧倒的に安定しているからです。</p>
+
+      <div class="card-grid card-grid-2">
+        <div class="card featured">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+            <span style="background:#1e3a5f;color:#fff;font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;">🥇 第1位</span>
+          </div>
+          <div style="font-size:20px;font-weight:700;margin-bottom:4px;">📦 ポケSIM</div>
+          <div style="font-size:13px;color:#555;margin-bottom:6px;">最大5回線｜3,630円〜</div>
+          <div style="font-size:12px;font-weight:700;color:#2563a8;">⚡ 速さガン振り</div>
+          <div style="font-size:12px;color:#555;margin-top:4px;">申込み当日に開通＋当日中にMNP予約番号まで発行可能。とにかくスピード最優先の方へ。</div>
+        </div>
+        <div class="card">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+            <span style="background:#2563a8;color:#fff;font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;">🥈 第2位</span>
+          </div>
+          <div style="font-size:20px;font-weight:700;margin-bottom:4px;">🔴 楽天モバイル</div>
+          <div style="font-size:13px;color:#555;margin-bottom:6px;">最大13回線｜2,046円〜</div>
+          <div style="font-size:12px;font-weight:700;color:#dc2626;">📊 最大13回線</div>
+          <div style="font-size:12px;color:#555;margin-top:4px;">マイナンバーカードがあれば当日開通OK。最大13回線まで持てる圧倒的な回線数。</div>
+        </div>
+        <div class="card">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+            <span style="background:#2563a8;color:#fff;font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;">🥉 第3位</span>
+          </div>
+          <div style="font-size:20px;font-weight:700;margin-bottom:4px;">📘 日本通信</div>
+          <div style="font-size:13px;color:#555;margin-bottom:6px;">最大5回線｜3,590円</div>
+          <div style="font-size:12px;font-weight:700;color:#16a34a;">🟢 シンプル操作</div>
+          <div style="font-size:12px;color:#555;margin-top:4px;">手続きが非常にシンプルで初心者向け。ポケSIMが混んでいる時の代替としても優秀。</div>
+        </div>
+        <div class="card">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+            <span style="background:#2563a8;color:#fff;font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;">4️⃣ 第4位</span>
+          </div>
+          <div style="font-size:20px;font-weight:700;margin-bottom:4px;">🟣 リンクスメイト</div>
+          <div style="font-size:13px;color:#555;margin-bottom:6px;">最大5回線｜約1,000円</div>
+          <div style="font-size:12px;font-weight:700;color:#7c3aed;">💰 コスパ最強</div>
+          <div style="font-size:12px;color:#555;margin-top:4px;">圧倒的なコスパを誇る約1,000円。慣れてしまえば使い勝手は一番良いかも。</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="summary-box">
+      <div style="font-size:13px;font-weight:700;color:#2563a8;margin-bottom:8px;">📘 このガイドの使い方</div>
+      <p style="font-size:14px;color:#1e3a5f;line-height:1.8;">4社それぞれ強みが違うので、<strong>自分の状況・目的に合わせて選ぶ</strong>のがベストです。以降のページで各社の詳細を解説しますので、気になる会社のページを確認してください。</p>
+      <div style="margin-top:14px;padding-top:12px;border-top:1px dashed #bfdbfe;text-align:right;font-size:12px;color:#888;">✍️ やっぴー（<a href="https://twitter.com/8p_thankyou" style="color:#888;">@8p_thankyou</a>）</div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ===================================== -->
+<!-- No.1 ポケSIM -->
+<!-- ===================================== -->
+<div class="page theme-orange">
+  <div class="page-header">
+    <span class="badge">⚡ 第1位 — ポケSIM</span>
+    <h1 class="page-title">ポケSIM<br>徹底解説ガイド</h1>
+    <p class="page-subtitle">🚀 当日開通・当日予約番号発行。とにかくスピードを最優先したい人のための弾回線です。</p>
+  </div>
+  <div class="page-content">
+
+    <div class="section">
+      <div class="section-label">🟠 基本スペック</div>
+      <h2>📊 ポケSIMの基本情報</h2>
+
+      <div class="flow-row">
+        <div class="flow-box">
+          <div class="fl-label">🏆 ランキング</div>
+          <div class="fl-val">第1位</div>
+        </div>
+        <span class="flow-arrow">｜</span>
+        <div class="flow-box">
+          <div class="fl-label">📊 最大回線数</div>
+          <div class="fl-val">5回線</div>
+        </div>
+        <span class="flow-arrow">｜</span>
+        <div class="flow-box">
+          <div class="fl-label">💴 費用</div>
+          <div class="fl-val">3,630円〜</div>
+        </div>
+        <span class="flow-arrow">｜</span>
+        <div class="flow-box">
+          <div class="fl-label">📡 開通スピード</div>
+          <div class="fl-val">当日開通</div>
+        </div>
+        <span class="flow-arrow">｜</span>
+        <div class="flow-box">
+          <div class="fl-label">🔢 予約番号発行</div>
+          <div class="fl-val">当日発行</div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <div class="section-label">🟠 おすすめポイント</div>
+      <h2>⭐ ポケSIMが第1位の理由</h2>
+      <p class="body-text">「速さガン振り」と呼ばれるほど、<strong>申込みから開通・MNP予約番号発行まですべてが超高速</strong>です。LINEでのやり取りだけで完結できるため手間もかかりません。</p>
+
+      <div class="step-list">
+        <div class="step-item">
+          <div class="step-num">1</div>
+          <div class="step-content">
+            <div class="step-title">⚡ 最速オプションで申込み当日に開通可能</div>
+            <div class="step-desc">最速オプションを付ければ、<strong>申込みしたその日のうちに回線が開通</strong>します。他社では翌日以降になることが多い中、圧倒的な速さです。</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">2</div>
+          <div class="step-content">
+            <div class="step-title">📲 当日中にMNP予約番号まで発行される</div>
+            <div class="step-desc">開通後すぐにMNP予約番号が発行されるため、<strong>1日でMNPの準備が完全に整います</strong>。「今日すぐ動きたい」という方には最強の選択肢。</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">3</div>
+          <div class="step-content">
+            <div class="step-title">💬 LINEだけで完結・スマホ操作が苦手な方でもOK</div>
+            <div class="step-desc">LINEでのやり取りで<strong>回線発行→予約番号発行まですべて完結</strong>します。複雑なアプリ操作が不要なので初心者でも安心です。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <div class="section-label">🟠 こんな人向け</div>
+      <h2>✅ ポケSIMが向いている人</h2>
+
+      <div class="card-grid card-grid-2">
+        <div class="card featured">
+          <span class="emoji-large">🏃</span>
+          <div style="font-size:14px;font-weight:700;margin-bottom:4px;">今日すぐMNPを回したい方</div>
+          <div style="font-size:12px;color:#555;">「明日じゃなく今日動きたい」という方には一択です。当日開通＋当日予約番号のダブル完結。</div>
+        </div>
+        <div class="card">
+          <span class="emoji-large">💪</span>
+          <div style="font-size:14px;font-weight:700;margin-bottom:4px;">スピード優先でガッツリ動きたい方</div>
+          <div style="font-size:12px;color:#555;">件数を短期間で一気に稼ぎたいアクティブな実践者向け。回転の速さが利益に直結します。</div>
+        </div>
+        <div class="card">
+          <span class="emoji-large">😌</span>
+          <div style="font-size:14px;font-weight:700;margin-bottom:4px;">契約作業を簡単に済ませたい方</div>
+          <div style="font-size:12px;color:#555;">LINEだけで完結するシンプルな操作感。面倒な手続きを最小限にしたい方にも◎。</div>
+        </div>
+        <div class="card">
+          <span class="emoji-large">🔰</span>
+          <div style="font-size:14px;font-weight:700;margin-bottom:4px;">MNP初心者で手順に不安がある方</div>
+          <div style="font-size:12px;color:#555;">サポート体制が整っており、初心者でもつまずきにくい設計になっています。</div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <div class="section-label">🟠 保有ルール</div>
+      <h2>📋 ポケSIMの保有ルール</h2>
+      <p class="body-text">ポケSIMは<strong>同時に5回線まで保有できる</strong>というルールです。このルールをしっかり理解することで、効率よく回線を管理できます。</p>
+
+      <div class="card featured" style="padding:20px 24px;">
+        <div style="font-size:13px;font-weight:700;color:#7c2d12;margin-bottom:12px;">📌 5回線ルールの仕組み</div>
+        <div class="flow-row">
+          <div class="flow-box">
+            <div class="fl-label">現在の保有数</div>
+            <div class="fl-val">最大5回線</div>
+          </div>
+          <span class="flow-arrow">➡️</span>
+          <div class="flow-box">
+            <div class="fl-label">解約 or MNP転出</div>
+            <div class="fl-val">その分だけ枠が空く</div>
+          </div>
+          <span class="flow-arrow">➡️</span>
+          <div class="flow-box">
+            <div class="fl-label">新規注文</div>
+            <div class="fl-val">当日から追加注文OK！</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card bg-yellow-light" style="margin-top:14px;">
+        💡 <strong>具体例：</strong>5回線持っている状態で2回線をMNP転出した場合、<strong>その日のうちに新たに2回線の注文が可能</strong>になります。回転させるほどスピードアップできるのがポケSIMの強みです。
+      </div>
+    </div>
+
+    <div class="summary-box">
+      <div style="font-size:13px;font-weight:700;color:#ea580c;margin-bottom:8px;">⚡ ポケSIM まとめ</div>
+      <div style="display:flex;flex-direction:column;gap:6px;">
+        <div style="font-size:13px;color:#7c2d12;">✅ 最速オプションで<strong>申込み当日に開通</strong></div>
+        <div style="font-size:13px;color:#7c2d12;">✅ <strong>当日中にMNP予約番号まで発行</strong>される</div>
+        <div style="font-size:13px;color:#7c2d12;">✅ <strong>LINEだけで完結</strong>するシンプルな操作</div>
+        <div style="font-size:13px;color:#7c2d12;">✅ 同時保有は<strong>最大5回線まで</strong></div>
+        <div style="font-size:13px;color:#7c2d12;">✅ 解約・転出した回線数分<strong>当日から追加注文OK</strong></div>
+      </div>
+      <div style="margin-top:14px;padding-top:12px;border-top:1px dashed #fed7aa;text-align:right;font-size:12px;color:#888;">✍️ やっぴー（<a href="https://twitter.com/8p_thankyou" style="color:#888;">@8p_thankyou</a>）</div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ===================================== -->
+<!-- No.2 楽天モバイル -->
+<!-- ===================================== -->
+<div class="page theme-red" style="--red-dark:#7f1d1d;--red:#dc2626;--red-light:#fff5f5;--red-border:#fecaca;">
+<style>
+  .theme-red .page-header { background: linear-gradient(135deg, #7f1d1d 0%, #dc2626 100%); color: #fff; }
+  .theme-red .badge { background: rgba(255,255,255,0.2); color: #fff; }
+  .theme-red .page-title { color: #fff; }
+  .theme-red .page-subtitle { color: rgba(255,255,255,0.75); }
+  .theme-red .section-label { color: #dc2626; }
+  .theme-red .section h2 { color: #7f1d1d; }
+  .theme-red .flow-box { background: #fff5f5; }
+  .theme-red .flow-box .fl-label { color: #dc2626; }
+  .theme-red .flow-box .fl-val { color: #7f1d1d; }
+  .theme-red .step-num { background: #dc2626; color: #fff; }
+  .theme-red .card { background: #fff5f5; border: 1px solid #fecaca; }
+  .theme-red .card.featured { background: #fee2e2; border: 2px solid #dc2626; }
+  .theme-red .summary-box { background: #fff5f5; border: 2px solid #fecaca; }
+  .theme-red th { background: #7f1d1d; color: #fff; }
+  .theme-red tr:nth-child(even) td { background: #fff5f5; }
+</style>
+  <div class="page-header">
+    <span class="badge">🔴 第2位 — 楽天モバイル</span>
+    <h1 class="page-title">楽天モバイル<br>徹底解説ガイド</h1>
+    <p class="page-subtitle">📊 業界最多クラスの最大13回線。マイナンバーカードがあれば当日開通できる頼もしい弾回線です。</p>
+  </div>
+  <div class="page-content">
+
+    <div class="section">
+      <div class="section-label">🔴 基本スペック</div>
+      <h2>📊 楽天モバイルの基本情報</h2>
+
+      <div class="flow-row">
+        <div class="flow-box">
+          <div class="fl-label">🏆 ランキング</div>
+          <div class="fl-val">第2位</div>
+        </div>
+        <span class="flow-arrow">｜</span>
+        <div class="flow-box">
+          <div class="fl-label">📊 最大回線数</div>
+          <div class="fl-val">13回線</div>
+        </div>
+        <span class="flow-arrow">｜</span>
+        <div class="flow-box">
+          <div class="fl-label">💴 費用</div>
+          <div class="fl-val">2,046円〜</div>
+        </div>
+        <span class="flow-arrow">｜</span>
+        <div class="flow-box">
+          <div class="fl-label">📡 開通スピード</div>
+          <div class="fl-val">当日開通</div>
+        </div>
+        <span class="flow-arrow">｜</span>
+        <div class="flow-box">
+          <div class="fl-label">🔢 予約番号発行</div>
+          <div class="fl-val">翌日発行</div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <div class="section-label">🔴 おすすめポイント</div>
+      <h2>⭐ 楽天モバイルが選ばれる理由</h2>
+
+      <div class="step-list">
+        <div class="step-item">
+          <div class="step-num">1</div>
+          <div class="step-content">
+            <div class="step-title">🪪 マイナンバーカードがあれば当日開通OK</div>
+            <div class="step-desc">マイナンバーカードさえあれば本人確認がスムーズに完了し、<strong>申込み当日に回線が開通</strong>します。準備さえ整えておけば素早く動けます。</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">2</div>
+          <div class="step-content">
+            <div class="step-title">📲 アプリ操作がカンタンで初心者でも扱いやすい</div>
+            <div class="step-desc">楽天モバイルのアプリは直感的で使いやすく、<strong>スマホ操作に慣れていない初心者でも迷わずに操作できます</strong>。MNP予約番号の発行もアプリから簡単に行えます。</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">3</div>
+          <div class="step-content">
+            <div class="step-title">📊 最大13回線という圧倒的な回線数</div>
+            <div class="step-desc">他社が最大5回線のところ、楽天モバイルは<strong>最大13回線まで保有できます</strong>。回線数を大量に確保してガンガン稼ぎたい方には最強の弾回線です。</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">4</div>
+          <div class="step-content">
+            <div class="step-title">💰 5回線まではコスパも◎</div>
+            <div class="step-desc">5回線目までは追加費用なく2,046円〜と低コストで運用できます。最初のうちは5回線以内に収めるのが最もコスパが良い使い方です。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <div class="section-label">🔴 注意事項</div>
+      <h2>⚠️ 知っておくべき2つの注意点</h2>
+      <p class="body-text">楽天モバイルは2025年11月19日より一部ルールが変更されました。<strong>必ず把握した上で利用してください。</strong></p>
+
+      <div class="card" style="background:#fff5f5;border:2px solid #dc2626;margin-bottom:12px;">
+        <span class="tag" style="background:#fee2e2;color:#991b1b;">⚠️ 注意①</span>
+        <div style="font-size:14px;font-weight:700;margin:8px 0 6px;">5回線目以降は事務手数料が発生する</div>
+        <div style="font-size:13px;color:#444;line-height:1.8;">
+          <strong>5回線目以降</strong>は事務手数料が<strong>3,500円（税込3,850円）</strong>かかります。<br>
+          6〜13回線目を追加する場合は、1回線ごとにこの手数料が発生するため、コスト計算に必ず含めてください。
+        </div>
+      </div>
+
+      <div class="card" style="background:#fff5f5;border:2px solid #dc2626;">
+        <span class="tag" style="background:#fee2e2;color:#991b1b;">⚠️ 注意②</span>
+        <div style="font-size:14px;font-weight:700;margin:8px 0 6px;">契約後1年以内の解約には手数料あり</div>
+        <div style="font-size:13px;color:#444;line-height:1.8;">
+          契約後<strong>1年以内にMNP転出を含む解約</strong>を行うと、<strong>1,078円の解約事務手数料</strong>がかかります。<br>
+          MNPの弾として使う場合は必然的に1年以内の転出になることが多いため、この費用も計算に含めておきましょう。
+        </div>
+      </div>
+
+      <div class="card bg-yellow-light" style="margin-top:14px;">
+        💡 <strong>費用の補足：</strong>表示の2,046円〜は<strong>契約後1年以内転出・5回線まで</strong>の場合の目安金額です。6回線目以降は手数料が加算されます。
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <div class="section-label">🔴 こんな人向け</div>
+      <h2>✅ 楽天モバイルが向いている人</h2>
+
+      <div class="card-grid card-grid-2">
+        <div class="card featured">
+          <span class="emoji-large">📊</span>
+          <div style="font-size:14px;font-weight:700;margin-bottom:4px;">回線数を多く持ちたい方</div>
+          <div style="font-size:12px;color:#555;">最大13回線という圧倒的な数は楽天モバイルだけ。大量の弾を確保したい方に最強です。</div>
+        </div>
+        <div class="card">
+          <span class="emoji-large">📱</span>
+          <div style="font-size:14px;font-weight:700;margin-bottom:4px;">楽天アプリに慣れている方</div>
+          <div style="font-size:12px;color:#555;">楽天サービスをすでに使い慣れている方は手続きがよりスムーズに進められます。</div>
+        </div>
+        <div class="card">
+          <span class="emoji-large">🗓️</span>
+          <div style="font-size:14px;font-weight:700;margin-bottom:4px;">当日開通→翌日予約番号で十分な方</div>
+          <div style="font-size:12px;color:#555;">ポケSIMほどの即日対応は不要だが、翌日には動き出したいという方にちょうど良い速さ。</div>
+        </div>
+        <div class="card">
+          <span class="emoji-large">💴</span>
+          <div style="font-size:14px;font-weight:700;margin-bottom:4px;">5回線以内で低コスト運用したい方</div>
+          <div style="font-size:12px;color:#555;">5回線まであれば追加手数料なし。コスト意識が高い方は5回線以内での運用がおすすめ。</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="summary-box">
+      <div style="font-size:13px;font-weight:700;color:#dc2626;margin-bottom:8px;">🔴 楽天モバイル まとめ</div>
+      <div style="display:flex;flex-direction:column;gap:6px;">
+        <div style="font-size:13px;color:#7f1d1d;">✅ マイナンバーカードがあれば<strong>当日開通OK</strong></div>
+        <div style="font-size:13px;color:#7f1d1d;">✅ MNP予約番号は<strong>翌日には発行</strong>される</div>
+        <div style="font-size:13px;color:#7f1d1d;">✅ アプリ操作がカンタンで<strong>初心者でも扱いやすい</strong></div>
+        <div style="font-size:13px;color:#7f1d1d;">✅ 最大<strong>13回線まで</strong>保有可能（業界最多クラス）</div>
+        <div style="font-size:13px;color:#7f1d1d;">⚠️ <strong>5回線目以降は手数料3,850円</strong>が発生</div>
+        <div style="font-size:13px;color:#7f1d1d;">⚠️ <strong>1年以内の解約は1,078円</strong>の解約事務手数料あり</div>
+      </div>
+      <div style="margin-top:14px;padding-top:12px;border-top:1px dashed #fecaca;text-align:right;font-size:12px;color:#888;">✍️ やっぴー（<a href="https://twitter.com/8p_thankyou" style="color:#888;">@8p_thankyou</a>）</div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ===================================== -->
+<!-- No.3 日本通信 -->
+<!-- ===================================== -->
+<div class="page theme-blue">
+  <div class="page-header">
+    <span class="badge">📘 第3位 — 日本通信</span>
+    <h1 class="page-title">日本通信<br>徹底解説ガイド</h1>
+    <p class="page-subtitle">🟢 シンプルな手続きで初心者に優しい。ポケSIMが混んでいる時の頼れる代替回線です。</p>
+  </div>
+  <div class="page-content">
+
+    <div class="section">
+      <div class="section-label">🔵 基本スペック</div>
+      <h2>📊 日本通信の基本情報</h2>
+
+      <div class="flow-row">
+        <div class="flow-box">
+          <div class="fl-label">🏆 ランキング</div>
+          <div class="fl-val">第3位</div>
+        </div>
+        <span class="flow-arrow">｜</span>
+        <div class="flow-box">
+          <div class="fl-label">📊 最大回線数</div>
+          <div class="fl-val">5回線</div>
+        </div>
+        <span class="flow-arrow">｜</span>
+        <div class="flow-box">
+          <div class="fl-label">💴 費用</div>
+          <div class="fl-val">3,590円</div>
+        </div>
+        <span class="flow-arrow">｜</span>
+        <div class="flow-box">
+          <div class="fl-label">📡 開通スピード</div>
+          <div class="fl-val">当日開通</div>
+        </div>
+        <span class="flow-arrow">｜</span>
+        <div class="flow-box">
+          <div class="fl-label">🔢 予約番号発行</div>
+          <div class="fl-val">翌日発行</div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <div class="section-label">🔵 おすすめポイント</div>
+      <h2>⭐ 日本通信が選ばれる理由</h2>
+
+      <div class="step-list">
+        <div class="step-item">
+          <div class="step-num">1</div>
+          <div class="step-content">
+            <div class="step-title">🪪 マイナンバーカードがあれば当日開通</div>
+            <div class="step-desc">マイナンバーカードを使った本人確認で<strong>申込み当日に開通</strong>できます。ポケSIMと同様に素早い対応が可能です。</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">2</div>
+          <div class="step-content">
+            <div class="step-title">📲 手続きがシンプルで初心者にかなり向いている</div>
+            <div class="step-desc">日本通信の申込みフローは非常にシンプルに設計されており、<strong>正直かなり初心者向け</strong>です。公式の作成フローを見ながら進めれば迷うことはほぼありません。</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">3</div>
+          <div class="step-content">
+            <div class="step-title">🔄 ポケSIM混雑時の頼れる代替として優秀</div>
+            <div class="step-desc">ポケSIMは人気のため時期によっては枠が埋まることも。そんな時のバックアップとして<strong>日本通信を押さえておくと安心</strong>です。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <div class="section-label">🔵 こんな人向け</div>
+      <h2>✅ 日本通信が向いている人</h2>
+
+      <div class="card-grid card-grid-2">
+        <div class="card featured">
+          <span class="emoji-large">🔄</span>
+          <div style="font-size:14px;font-weight:700;margin-bottom:4px;">ポケSIMが混んでいる時の代替として使いたい方</div>
+          <div style="font-size:12px;color:#555;">「ポケSIMの枠が埋まっていた…」という時のベストな選択肢。スペックはほぼ同等です。</div>
+        </div>
+        <div class="card">
+          <span class="emoji-large">💸</span>
+          <div style="font-size:14px;font-weight:700;margin-bottom:4px;">楽天の手数料は避けたい方</div>
+          <div style="font-size:12px;color:#555;">楽天モバイルの解約手数料が気になる方には、同コスト帯で手数料が少ない日本通信が◎。</div>
+        </div>
+        <div class="card">
+          <span class="emoji-large">🟢</span>
+          <div style="font-size:14px;font-weight:700;margin-bottom:4px;">とにかくシンプルな操作を望む方</div>
+          <div style="font-size:12px;color:#555;">複雑な設定が苦手な方でも安心の、直感的でわかりやすい申込みフロー。</div>
+        </div>
+        <div class="card">
+          <span class="emoji-large">📅</span>
+          <div style="font-size:14px;font-weight:700;margin-bottom:4px;">翌日には動き出したい方</div>
+          <div style="font-size:12px;color:#555;">当日開通・翌日予約番号発行なので、翌日にはMNPの準備が完了します。</div>
+        </div>
+      </div>
+
+      <div class="card bg-yellow-light" style="margin-top:14px;">
+        📘 <strong>公式フローを活用しよう：</strong>日本通信は公式サイト（nihontsushin.com/support/introduction_app）に詳しい作成フローが掲載されています。初めての方はまずここを確認してから進めると安心です。
+      </div>
+    </div>
+
+    <div class="summary-box">
+      <div style="font-size:13px;font-weight:700;color:#2563a8;margin-bottom:8px;">📘 日本通信 まとめ</div>
+      <div style="display:flex;flex-direction:column;gap:6px;">
+        <div style="font-size:13px;color:#1e3a5f;">✅ マイナンバーカードがあれば<strong>当日開通OK</strong></div>
+        <div style="font-size:13px;color:#1e3a5f;">✅ 予約番号は<strong>翌日に発行</strong>される</div>
+        <div style="font-size:13px;color:#1e3a5f;">✅ 手続きがシンプルで<strong>正直かなり初心者向け</strong></div>
+        <div style="font-size:13px;color:#1e3a5f;">✅ 最大<strong>5回線まで</strong>保有可能</div>
+        <div style="font-size:13px;color:#1e3a5f;">✅ ポケSIM混雑時の<strong>頼れる代替回線</strong>として最適</div>
+      </div>
+      <div style="margin-top:14px;padding-top:12px;border-top:1px dashed #bfdbfe;text-align:right;font-size:12px;color:#888;">✍️ やっぴー（<a href="https://twitter.com/8p_thankyou" style="color:#888;">@8p_thankyou</a>）</div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ===================================== -->
+<!-- No.4 リンクスメイト -->
+<!-- ===================================== -->
+<div class="page theme-purple">
+  <div class="page-header">
+    <span class="badge">🟣 第4位 — リンクスメイト</span>
+    <h1 class="page-title">リンクスメイト<br>徹底解説ガイド</h1>
+    <p class="page-subtitle">💰 約1,000円という圧倒的なコスパが最大の魅力。慣れてしまえば使い勝手は4社の中でも一番良いかもしれません。</p>
+  </div>
+  <div class="page-content">
+
+    <div class="section">
+      <div class="section-label">🟣 基本スペック</div>
+      <h2>📊 リンクスメイトの基本情報</h2>
+
+      <div class="flow-row">
+        <div class="flow-box">
+          <div class="fl-label">🏆 ランキング</div>
+          <div class="fl-val">第4位</div>
+        </div>
+        <span class="flow-arrow">｜</span>
+        <div class="flow-box">
+          <div class="fl-label">📊 最大回線数</div>
+          <div class="fl-val">5回線</div>
+        </div>
+        <span class="flow-arrow">｜</span>
+        <div class="flow-box">
+          <div class="fl-label">💴 費用</div>
+          <div class="fl-val">約1,000円</div>
+        </div>
+        <span class="flow-arrow">｜</span>
+        <div class="flow-box">
+          <div class="fl-label">📡 開通スピード</div>
+          <div class="fl-val">当日開通</div>
+        </div>
+        <span class="flow-arrow">｜</span>
+        <div class="flow-box">
+          <div class="fl-label">🔢 予約番号発行</div>
+          <div class="fl-val">翌日発行</div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <div class="section-label">🟣 おすすめポイント</div>
+      <h2>⭐ リンクスメイトが選ばれる理由</h2>
+
+      <div class="step-list">
+        <div class="step-item">
+          <div class="step-num">1</div>
+          <div class="step-content">
+            <div class="step-title">💰 約1,000円という圧倒的なコスパ</div>
+            <div class="step-desc">eSIM発行手数料500円＋517円の月額日割りで、合計<strong>約1,000円という驚異のコスト</strong>で1回線作れます。他社が3,000円〜4,000円かかるのと比べると圧倒的です。</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">2</div>
+          <div class="step-content">
+            <div class="step-title">📲 開通翌日にMNP予約番号が発行される</div>
+            <div class="step-desc">開通は当日、MNP予約番号は<strong>翌日には発行</strong>されます。コスパが低いからといってスピードが犠牲になるわけではありません。</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num">3</div>
+          <div class="step-content">
+            <div class="step-title">🔧 慣れると使い勝手が4社の中でも一番かも</div>
+            <div class="step-desc">最初は少し操作に戸惑うかもしれませんが、<strong>一度慣れてしまえば使い勝手は一番良い</strong>という声も多いです。回線数を大量に回すベテランに人気。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <div class="section-label">🟣 重要な注意点</div>
+      <h2>⚠️ 本人確認書類の制限【必ず確認！】</h2>
+      <p class="body-text">リンクスメイトには<strong>本人確認書類に制限</strong>があります。他の弾回線と異なるため、必ず事前に確認しておいてください。</p>
+
+      <div class="card bg-green-light" style="margin-bottom:12px;">
+        <div style="font-size:12px;font-weight:700;color:#15803d;margin-bottom:8px;">✅ 使用できる本人確認書類（4種のみ）</div>
+        <div class="card-grid card-grid-2" style="margin-top:8px;">
+          <div class="card" style="background:#fff;border:1px solid #bbf7d0;text-align:center;padding:12px;">
+            <div style="font-size:20px;margin-bottom:4px;">🪪</div>
+            <div style="font-size:13px;font-weight:700;">マイナンバーカード</div>
+            <div style="font-size:11px;color:#555;margin-top:2px;">最もスムーズ</div>
+          </div>
+          <div class="card" style="background:#fff;border:1px solid #bbf7d0;text-align:center;padding:12px;">
+            <div style="font-size:20px;margin-bottom:4px;">🚗</div>
+            <div style="font-size:13px;font-weight:700;">運転免許証</div>
+            <div style="font-size:11px;color:#555;margin-top:2px;">暗証番号が必要</div>
+          </div>
+          <div class="card" style="background:#fff;border:1px solid #bbf7d0;text-align:center;padding:12px;">
+            <div style="font-size:20px;margin-bottom:4px;">🌐</div>
+            <div style="font-size:13px;font-weight:700;">在留カード</div>
+            <div style="font-size:11px;color:#555;margin-top:2px;">外国籍の方向け</div>
+          </div>
+          <div class="card" style="background:#fff;border:1px solid #bbf7d0;text-align:center;padding:12px;">
+            <div style="font-size:20px;margin-bottom:4px;">📋</div>
+            <div style="font-size:13px;font-weight:700;">特別永住者証明書</div>
+            <div style="font-size:11px;color:#555;margin-top:2px;">該当者のみ</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" style="background:#faf5ff;border:2px solid #7c3aed;">
+        <div style="font-size:13px;font-weight:700;color:#3b0764;margin-bottom:8px;">🔑 運転免許証を使う場合の注意点</div>
+        <div style="font-size:13px;color:#444;line-height:1.8;">
+          マイナンバーカードがない場合、運転免許証を使うことはできますが<strong>暗証番号の入力が必要</strong>となります。暗証番号を忘れている方は、市区町村の窓口やマイナポータルで事前に確認しておきましょう。
+        </div>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <div class="section-label">🟣 費用の内訳</div>
+      <h2>💴 約1,000円の内訳</h2>
+
+      <div class="card featured" style="padding:20px 24px;">
+        <div style="font-size:13px;font-weight:700;color:#3b0764;margin-bottom:12px;">📊 費用の内訳</div>
+        <div class="flow-row">
+          <div class="flow-box">
+            <div class="fl-label">eSIM発行手数料</div>
+            <div class="fl-val">500円</div>
+          </div>
+          <span class="flow-arrow">➕</span>
+          <div class="flow-box">
+            <div class="fl-label">月額（日割り）</div>
+            <div class="fl-val">517円（日割り）</div>
+          </div>
+          <span class="flow-arrow">≒</span>
+          <div class="flow-box" style="background:#ede9fe;border:2px solid #7c3aed;">
+            <div class="fl-label" style="color:#7c3aed;">合計目安</div>
+            <div class="fl-val" style="color:#3b0764;">約1,000円</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card bg-yellow-light" style="margin-top:14px;">
+        💡 <strong>補足：</strong>月額517円は日割り計算のため、契約月によって金額は変動します。月の前半に契約した場合は少し高め、後半に契約した場合は低くなります。
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <div class="section-label">🟣 こんな人向け</div>
+      <h2>✅ リンクスメイトが向いている人</h2>
+
+      <div class="card-grid card-grid-2">
+        <div class="card featured">
+          <span class="emoji-large">💰</span>
+          <div style="font-size:14px;font-weight:700;margin-bottom:4px;">コスパを最優先したい方</div>
+          <div style="font-size:12px;color:#555;">約1,000円という圧倒的な安さは他の追随を許しません。弾を大量に用意したい時のコスト削減に最適。</div>
+        </div>
+        <div class="card">
+          <span class="emoji-large">🪪</span>
+          <div style="font-size:14px;font-weight:700;margin-bottom:4px;">マイナンバーカードを持っている方</div>
+          <div style="font-size:12px;color:#555;">本人確認書類の制限があるため、マイナンバーカードがあると最もスムーズに進められます。</div>
+        </div>
+        <div class="card">
+          <span class="emoji-large">🔧</span>
+          <div style="font-size:14px;font-weight:700;margin-bottom:4px;">ある程度MNPに慣れてきた方</div>
+          <div style="font-size:12px;color:#555;">最初は少し操作に慣れが必要ですが、コツを掴めば使い勝手が一番良くなります。</div>
+        </div>
+        <div class="card">
+          <span class="emoji-large">📉</span>
+          <div style="font-size:14px;font-weight:700;margin-bottom:4px;">弾のコストを下げたい方</div>
+          <div style="font-size:12px;color:#555;">他3社との組み合わせでコストを最適化したい方に。大量の弾を用意する際の主力に。</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="summary-box">
+      <div style="font-size:13px;font-weight:700;color:#7c3aed;margin-bottom:8px;">🟣 リンクスメイト まとめ</div>
+      <div style="display:flex;flex-direction:column;gap:6px;">
+        <div style="font-size:13px;color:#3b0764;">✅ <strong>約1,000円という圧倒的コスパ</strong>（4社中最安）</div>
+        <div style="font-size:13px;color:#3b0764;">✅ 開通は当日・予約番号は<strong>翌日に発行</strong></div>
+        <div style="font-size:13px;color:#3b0764;">✅ 慣れると<strong>使い勝手が4社の中でも一番良いかも</strong></div>
+        <div style="font-size:13px;color:#3b0764;">✅ 最大<strong>5回線まで</strong>保有可能</div>
+        <div style="font-size:13px;color:#3b0764;">⚠️ 本人確認書類は<strong>4種のみ</strong>（マイナンバー・免許証・在留カード・特別永住者証明書）</div>
+        <div style="font-size:13px;color:#3b0764;">⚠️ 免許証を使う場合は<strong>暗証番号が必要</strong></div>
+      </div>
+      <div style="margin-top:14px;padding-top:12px;border-top:1px dashed #ddd6fe;text-align:right;font-size:12px;color:#888;">✍️ やっぴー（<a href="https://twitter.com/8p_thankyou" style="color:#888;">@8p_thankyou</a>）</div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ===================================== -->
+<!-- 比較・まとめページ -->
+<!-- ===================================== -->
+<div class="page theme-gold">
+  <div class="page-header">
+    <span class="badge">📊 比較 & まとめ</span>
+    <h1 class="page-title">4社スペック比較<br>& 目的別選び方ガイド</h1>
+    <p class="page-subtitle">🎯 スペックを横並びで比較し、自分に最適な弾回線を見つけましょう。</p>
+  </div>
+  <div class="page-content">
+
+    <div class="section">
+      <div class="section-label">🟡 比較</div>
+      <h2>📊 4社スペック一覧</h2>
+      <p class="body-text">4社の主要スペックを横並びで比較できる表です。状況に応じて使い分けるのが最適です。</p>
+
+      <table>
+        <tr>
+          <th>項目</th>
+          <th style="text-align:center;">⚡ ポケSIM</th>
+          <th style="text-align:center;">🔴 楽天</th>
+          <th style="text-align:center;">📘 日本通信</th>
+          <th style="text-align:center;">🟣 リンクス</th>
+        </tr>
+        <tr>
+          <td><strong>最大回線数</strong></td>
+          <td style="text-align:center;font-weight:700;">5回線</td>
+          <td style="text-align:center;font-weight:700;color:#dc2626;">13回線 🏆</td>
+          <td style="text-align:center;font-weight:700;">5回線</td>
+          <td style="text-align:center;font-weight:700;">5回線</td>
+        </tr>
+        <tr>
+          <td><strong>費用</strong></td>
+          <td style="text-align:center;">3,630円〜</td>
+          <td style="text-align:center;">2,046円〜</td>
+          <td style="text-align:center;">3,590円</td>
+          <td style="text-align:center;font-weight:700;color:#7c3aed;">約1,000円 🏆</td>
+        </tr>
+        <tr>
+          <td><strong>開通スピード</strong></td>
+          <td style="text-align:center;">当日</td>
+          <td style="text-align:center;">当日</td>
+          <td style="text-align:center;">当日</td>
+          <td style="text-align:center;">当日</td>
+        </tr>
+        <tr>
+          <td><strong>予約番号発行</strong></td>
+          <td style="text-align:center;font-weight:700;color:#ea580c;">当日 🏆</td>
+          <td style="text-align:center;">翌日</td>
+          <td style="text-align:center;">翌日</td>
+          <td style="text-align:center;">翌日</td>
+        </tr>
+        <tr>
+          <td><strong>手続きの簡単さ</strong></td>
+          <td style="text-align:center;">◎（LINE完結）</td>
+          <td style="text-align:center;">◎（アプリ）</td>
+          <td style="text-align:center;">◎（超シンプル）</td>
+          <td style="text-align:center;">△（慣れが必要）</td>
+        </tr>
+        <tr>
+          <td><strong>注意点</strong></td>
+          <td style="text-align:center;">保有5回線上限</td>
+          <td style="text-align:center;">6回線目〜手数料</td>
+          <td style="text-align:center;">特になし</td>
+          <td style="text-align:center;">本人確認書類制限</td>
+        </tr>
+      </table>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <div class="section-label">🟡 選び方</div>
+      <h2>🎯 目的別おすすめ選び方ガイド</h2>
+      <p class="body-text">4社それぞれ強みが違うので、<strong>自分の状況に合わせて選ぶ</strong>のがベストです。</p>
+
+      <div class="step-list">
+        <div class="step-item">
+          <div class="step-num" style="background:#ea580c;">⚡</div>
+          <div class="step-content">
+            <div class="step-title">スピード最優先なら → ポケSIM</div>
+            <div class="step-desc">当日開通＋当日予約番号発行のダブル完結。「今日すぐ動きたい！」という方はポケSIM一択です。</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#dc2626;">📊</div>
+          <div class="step-content">
+            <div class="step-title">回線数を多く持ちたいなら → 楽天モバイル</div>
+            <div class="step-desc">最大13回線という圧倒的な数は楽天モバイルだけ。大量の弾を確保したい方に最強の選択肢です。</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#2563a8;">🟢</div>
+          <div class="step-content">
+            <div class="step-title">操作の簡単さを重視するなら → 日本通信</div>
+            <div class="step-desc">手続きが超シンプルで、初心者でも迷わず進められます。ポケSIMが混んでいる時の代替にも最適。</div>
+          </div>
+        </div>
+        <div class="step-item">
+          <div class="step-num" style="background:#7c3aed;">💰</div>
+          <div class="step-content">
+            <div class="step-title">コスパを最優先するなら → リンクスメイト</div>
+            <div class="step-desc">約1,000円という圧倒的な安さで、弾コストを最小限に抑えたい方に。慣れれば使い勝手も最高。</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card bg-yellow-light" style="margin-top:14px;">
+        💡 <strong>プロのコツ：</strong>1社だけに絞らず、<strong>状況に合わせて複数社を使い分ける</strong>のが最も効率的です。例えばメインはポケSIM・コスト削減にリンクスメイト・回線数確保に楽天モバイル、という組み合わせが鉄板です。
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <div class="section-label">🟡 共通ルール</div>
+      <h2>📋 4社共通の大切なポイント</h2>
+
+      <div class="card-grid card-grid-2">
+        <div class="card">
+          <span style="font-size:24px;display:block;margin-bottom:8px;">🪪</span>
+          <div style="font-size:14px;font-weight:700;margin-bottom:4px;">マイナンバーカードを事前に準備</div>
+          <div style="font-size:12px;color:#555;">4社すべてでマイナンバーカードがあると手続きがスムーズになります。持っていない方は早めに作成を。</div>
+        </div>
+        <div class="card">
+          <span style="font-size:24px;display:block;margin-bottom:8px;">⏰</span>
+          <div style="font-size:14px;font-weight:700;margin-bottom:4px;">MNP予約番号の有効期限に注意</div>
+          <div style="font-size:12px;color:#555;">予約番号の有効期限は一般的に15日間。発行後は早めに使い切るように計画を立てましょう。</div>
+        </div>
+        <div class="card">
+          <span style="font-size:24px;display:block;margin-bottom:8px;">📡</span>
+          <div style="font-size:14px;font-weight:700;margin-bottom:4px;">eSIM対応端末を事前に確認</div>
+          <div style="font-size:12px;color:#555;">リンクスメイトはeSIM発行のため、eSIM対応端末が必要です。他社もeSIM利用の場合は要確認。</div>
+        </div>
+        <div class="card">
+          <span style="font-size:24px;display:block;margin-bottom:8px;">💬</span>
+          <div style="font-size:14px;font-weight:700;margin-bottom:4px;">案件元への事前確認は必須</div>
+          <div style="font-size:12px;color:#555;">どの弾回線を使うかは店舗・案件によってNGなケースも。必ず案件元に確認してから作成しましょう。</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="summary-box">
+      <div style="font-size:13px;font-weight:700;color:#b45309;margin-bottom:8px;">📊 全体まとめ</div>
+      <div style="text-align:center;padding:12px 0;">
+        <div style="font-size:18px;font-weight:700;color:#451a03;margin-bottom:8px;">弾回線選びに迷ったら<br>この4社を状況に応じて使い分け！</div>
+        <div style="font-size:14px;color:#555;line-height:1.8;">⚡ <strong>スピード重視</strong> → ポケSIM<br>📊 <strong>回線数重視</strong> → 楽天モバイル<br>🟢 <strong>シンプルさ重視</strong> → 日本通信<br>💰 <strong>コスパ重視</strong> → リンクスメイト</div>
+      </div>
+      <div style="margin-top:14px;padding-top:12px;border-top:1px dashed #fde68a;text-align:right;font-size:12px;color:#888;">✍️ やっぴー（<a href="https://twitter.com/8p_thankyou" style="color:#888;">@8p_thankyou</a>）</div>
+    </div>
+
+  </div>
+</div>
+
+
+</body>
+</html>
